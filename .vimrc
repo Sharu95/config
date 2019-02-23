@@ -19,3 +19,9 @@ set number relativenumber
 
 
 autocmd VimEnter * NERDTree
+set autoindent
+set noexpandtab
+set tabstop=2
+set shiftwidth=2
+set listchars=tab:\-\ 
+set list
