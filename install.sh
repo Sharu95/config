@@ -26,3 +26,4 @@ echo '. $CONFIG_FOLDER/z/z.sh' >> $HOME/BASH_PROFILE
 sudo apt update
 sudo apt install gnome-tweak-tool
 sudo apt install oranchelo-icon-theme
+sudo apt install gnome-sushi
