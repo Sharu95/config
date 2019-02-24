@@ -1,5 +1,5 @@
 BASH_PROFILE=".bash_profile"
-CONFIG_FOLDER="test"
+CONFIG_FOLDER="Configurations"
 mkdir $HOME/$CONFIG_FOLDER
 
 touch $HOME/.bash_aliases
