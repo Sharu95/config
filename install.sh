@@ -6,21 +6,20 @@ touch $HOME/.bash_aliases
 mv $HOME/.bash_aliases $HOME/$BASH_PROFILE
 echo 'export CONFIG_FOLDER=$HOME/Configurations' >> $HOME/$BASH_PROFILE
 echo 'alias restart=source $HOME/.bashrc' >> $HOME/$BASH_PROFILE
-cd $HOME/$CONFIG_FOLDER
 
 # Config files
-git clone git@github.com:Sharu95/config.git config
-cat config/scripts/start_env.sh >> $HOME/$BASH_PROFILE
-cp config/.vimrc $HOME/.vimrc
+git clone git@github.com:Sharu95/config.git $HOME/$CONFIG_FOLDER/config
+cat $HOME/$CONFIG_FOLDER/config/scripts/start_env.sh >> $HOME/$BASH_PROFILE
+cp $HOME/$CONFIG_FOLDER/config/.vimrc $HOME/.vimrc
 
 # Git-radar
-git clone git@github.com:michaeldfallen/git-radar.git git-radar
+git clone git@github.com:michaeldfallen/git-radar.git $HOME/$CONFIG_FOLDER/git-radar
 echo 'export PATH=$PATH:$CONFIG_FOLDER/git-radar'
 echo 'LAMBDA="\[\033\]\[[38;5;208m\]λ\[\033\]\[[0m\]"' >> $HOME/$BASH_PROFILE
 echo 'export PS1="$LAMBDA\$(git-radar --bash --fetch) "'
 
 # Z jumping
-git clone git@github.com:rupa/z.git z
+git clone git@github.com:rupa/z.git $HOME/$CONFIG_FOLDER/z
 echo '. $CONFIG_FOLDER/z/z.sh' >> $HOME/BASH_PROFILE
 
 # Ubuntu theme and tweak tools
