@@ -57,5 +57,5 @@
     "material-icon-theme.hidesExplorerArrows": true,
     "material-icon-theme.folders.theme": "specific",
     "material-icon-theme.activeIconPack": "react_redux",
-    "material-icon-theme.opacity": 1,
+    "material-icon-theme.opacity": 1
 }
