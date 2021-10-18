@@ -8,3 +8,5 @@ elif [[ $BAT_PCT -gt 30 ]]; then
     BATTERY="$BAT_PCT% [$BAT_TIME]"
 else
     BATTERY="$BAT_PCT% [$BAT_TIME]"
+fi
+echo "$BATTERY"
