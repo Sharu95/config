@@ -41,6 +41,8 @@ brew install mycli
 brew install watchman
 brew install tfenv
 brew install tgenv
+brew install pyenv
+brew install jenv
 
 # Copy GitHub config
 cat scripts/start_env.sh >> "$HOME/$SHELL_FILE" && echo >> "$HOME/$SHELL_FILE"
