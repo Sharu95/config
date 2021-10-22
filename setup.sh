@@ -9,11 +9,18 @@ echo "export CONFIG_FOLDER=$HOME/$CONFIG_FOLDER" >> "$HOME/$SHELL_FILE" && echo 
 echo 'LAMBDA="\[\033\]\[[38;5;208m\]λ\[\033\]\[[0m\]"' >> $HOME/$SHELL_FILE
 
 # Z jumping config
-git clone git@github.com:rupa/z.git $HOME/$CONFIG_FOLDER/z
+git clone https://github.com/rupa/z $HOME/$CONFIG_FOLDER/z
 echo ". \$CONFIG_FOLDER/z/z.sh" >> $HOME/$SHELL_FILE && echo >> "$HOME/$SHELL_FILE"
+
+# Tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 
 # Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install sdkman 
+#curl -s "https://get.sdkman.io" | bash
+#source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Install baseline packages
 brew install docker
@@ -36,6 +43,7 @@ brew install node
 brew install yarn
 brew install gradle
 brew install awscli
+brew install awslogs
 brew install redis
 brew install mycli
 brew install watchman
@@ -43,6 +51,13 @@ brew install tfenv
 brew install tgenv
 brew install pyenv
 brew install jenv
+brew install google-chrome
+
+# Install and apply versions
+# pyenv install 3.7.0
+
+
+
 
 # Copy GitHub config
 cat scripts/start_env.sh >> "$HOME/$SHELL_FILE" && echo >> "$HOME/$SHELL_FILE"
@@ -54,13 +69,19 @@ echo 'export PROMPT="
 cp .vimrc $HOME/.vimrc
 cp .tmux.conf $HOME/.tmux.conf
 
-# Git radar config
+# nvm, jenv, git-radar
+mkdir $HOME/.nvm
 echo "export PATH=\$PATH:\$CONFIG_FOLDER/git-radar" >> $HOME/$SHELL_FILE
+echo "export PATH=\$HOME/.jenv/bin:\$PATH" >> $HOME/$SHELL_FILE
+echo "export NVM_DIR=\"\$HOME/.nvm\"" >> $HOME/$SHELL_FILE
+echo "[ -s \"\$(brew --prefix)/opt/nvm/nvm.sh\" ] && . \"\$(brew --prefix)/opt/nvm/nvm.sh\" #This loads nvm" >> $HOME/$SHELL_FILE
+echo "[ -s \"\$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm\" ] && . \"\$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm\" # This loads nvm bash_completion" >> $HOME/$SHELL_FILE
 
 # Aliases
 echo "alias ls='ls -GaFfl'" >> $HOME/$SHELL_FILE
 echo "alias p=python3" >> $HOME/$SHELL_FILE
 echo "alias restart=\"source \$HOME/$SHELL_FILE\"" >> "$HOME/$SHELL_FILE"
+echo "alias trestart='tmux source \$HOME/.tmux.conf'"
 
 
 ##### LINUX Ubuntu theme and tweak tools
