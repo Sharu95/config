@@ -10,11 +10,12 @@ copy_settings() {
 	if [[ $1 == "linux" ]]; then
 		VS_SETTINGS="$HOME/.config/Code/User"
 	elif [[ $1 == "mac" ]]; then
-		VS_SETTINGS="$HOME/Library/Application Support/Code"
+		VS_SETTINGS="$HOME/Library/Application Support/Code/User"
 	else 
 		echo "Specify system for settings path"
 	fi
 	cp settings.json $VS_SETTINGS/settings.json
+	cp keybindings.json $VS_SETTINGS/keybindings.json
 }
 
 install_extensions
