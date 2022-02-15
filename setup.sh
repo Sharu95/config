@@ -19,8 +19,8 @@ git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install sdkman 
-#curl -s "https://get.sdkman.io" | bash
-#source "$HOME/.sdkman/bin/sdkman-init.sh"
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Install baseline packages
 brew install docker
@@ -82,6 +82,12 @@ echo "alias ls='ls -GaFfl'" >> $HOME/$SHELL_FILE
 echo "alias p=python3" >> $HOME/$SHELL_FILE
 echo "alias restart=\"source \$HOME/$SHELL_FILE\"" >> "$HOME/$SHELL_FILE"
 echo "alias trestart='tmux source \$HOME/.tmux.conf'"
+
+
+# Other 
+echo "export SDKMAN_DIR=\"\$HOME/.sdkman\"" >> $HOME/$SHELL_FILE
+echo "[[ -s \"\$HOME/.sdkman/bin/sdkman-init.sh\" ]] && source \"\$HOME/.sdkman/bin/sdkman-init.sh\"" >> $HOME/$SHELL_FILE
+echo "export LOCAL_GRADLE_CACHE=1" >> $HOME/$SHELL_FILE
 
 
 ##### LINUX Ubuntu theme and tweak tools
