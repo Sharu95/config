@@ -1,5 +1,4 @@
 # Starts Python virtual environments. Assumes setup script is ran to create bash_profile
-VIRTUAL_ENV_FOLDER=$CONFIG_FOLDER/environments
 start () {
 	if [[ $# == 0 ]]; then
 		echo "Specify env folder"

@@ -13,6 +13,7 @@ copy_settings() {
 		VS_SETTINGS="$HOME/Library/Application Support/Code/User"
 	else 
 		echo "Specify system for settings path"
+		exit
 	fi
 	cp settings.json $VS_SETTINGS/settings.json
 	cp keybindings.json $VS_SETTINGS/keybindings.json

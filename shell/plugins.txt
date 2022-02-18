@@ -1,0 +1,7 @@
+plugins=(
+	battery
+	web-search
+	gradle
+	z
+	colored-man-pages
+)
