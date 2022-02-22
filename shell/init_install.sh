@@ -17,6 +17,9 @@ git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 echo "| Installing Oh My Zsh"
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+mkdir "$HOME/.nvm"
+
+
 ##### LINUX Ubuntu theme and tweak tools
 #sudo apt update
 #sudo apt install gnome-tweak-tool

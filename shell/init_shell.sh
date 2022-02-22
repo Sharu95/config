@@ -21,6 +21,7 @@ echo 'export CONFIG_FOLDER="$HOME/configurations"' >> $SHELL_FILE_PATH
 echo 'export LAMBDA="\[\\033\]\[[38;5;208m\]λ\[\\033\]\[[0m\]"' >> $SHELL_FILE_PATH
 echo 'export VIRTUAL_ENV_FOLDER="$CONFIG_FOLDER/environments"' >> $SHELL_FILE_PATH
 echo 'export SDKMAN_DIR="$HOME/.sdkman"' >> $SHELL_FILE_PATH
+echo 'export NVM_DIR="$HOME/.nvm"' >> $SHELL_FILE_PATH
 echo 'export LOCAL_GRADLE_CACHE=1' >> $SHELL_FILE_PATH
 echo 'export GIT_RADAR_COLOR_BRANCH="$fg_bold[yellow]"' >> $SHELL_FILE_PATH
 echo 'setopt PROMPT_SUBST' >> $SHELL_FILE_PATH
@@ -54,7 +55,8 @@ echo >> $SHELL_FILE_PATH
 echo 'source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"' >> $SHELL_FILE_PATH
 echo 'source "$(brew --prefix)/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"' >> $SHELL_FILE_PATH
 echo '[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"' >> $SHELL_FILE_PATH
-
+echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" # Load NVM' >> $SHELL_FILE_PATH
+echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # Load NVM bash_completion' >> $SHELL_FILE_PATH
 
 # Init
 source $SHELL_FILE_PATH
