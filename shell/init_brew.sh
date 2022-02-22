@@ -8,6 +8,7 @@ brew install watchman
 brew install awscli
 brew install awslogs
 brew install tmux
+brew install tldr
 
 # Casks 
 brew install --cask docker
