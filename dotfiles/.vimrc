@@ -29,7 +29,7 @@ let g:airline_theme='material'
 
 " set color scheme in general
 set background=dark
-colorscheme vim-material
+" colorscheme vim-material
 
 set number relativenumber
 set colorcolumn=80
@@ -38,10 +38,10 @@ set colorcolumn=80
 let g:airline#extensions#tabline#enabled = 1
 
 
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
 set autoindent
 set noexpandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set listchars=tab:\-\ 
 set list
