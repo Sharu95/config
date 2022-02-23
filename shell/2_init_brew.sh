@@ -10,6 +10,11 @@ brew install awslogs
 brew install tmux
 brew install tldr
 brew install nvm
+brew install openssl
+brew install readline
+brew install sqlite3 
+brew install xz
+brew install zlib
 
 # Casks 
 brew install --cask docker

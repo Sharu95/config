@@ -11,9 +11,10 @@ setup() {
 
     # Init shell and libraries
     cd shell
-    zsh init_install.sh
-    zsh init_brew.sh
-    zsh init_shell.sh
+    zsh 1_init_install.sh
+    zsh 2_init_brew.sh
+    zsh 3_init_env.sh
+    zsh 4_init_shell.sh
 
     # Init VS code
     cd ../vscode
