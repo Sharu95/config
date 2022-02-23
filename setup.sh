@@ -20,6 +20,9 @@ setup() {
     cd ../vscode
     zsh init.sh $1
 
+    cd ../python
+    zsh init_python_env.sh
+
     # TODO: add Iterm2 python API script
 }
 
