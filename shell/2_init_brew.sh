@@ -28,6 +28,9 @@ brew install --cask intellij-idea
 brew install --cask slack
 brew install --cask aws-vault
 
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
+
 # Optional ones
 # brew install --cask ngrok
 # brew install --cask redisinsight
