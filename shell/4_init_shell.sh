@@ -45,9 +45,9 @@ echo '# export CPPFLAGS="-I/opt/homebrew/opt/zlib/include:$CPPFLAGS"' >> $SHELL_
 echo '# export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig:$PKG_CONFIG_PATH"' >> $SHELL_FILE_PATH
 
 echo 'setopt PROMPT_SUBST' >> $SHELL_FILE_PATH
-echo 'export RPROMPT="%{$fg_bold[cyan]%}%T %D{%a %d %b}%{$reset_color%} | \$(battery_pct_prompt)"' >> $SHELL_FILE_PATH
+echo 'export RPROMPT="🚗 💨 💨 %{$fg_bold[cyan]%}%T %D{%a %d %b}%{$reset_color%} | \$(battery_pct_prompt)"' >> $SHELL_FILE_PATH
 echo 'export PROMPT="
-%B%{$fg[green]%}λ %{$fg[cyan]%}%c%{$reset_color%}%b\$(git-radar --zsh --fetch) ➜ "' >> $SHELL_FILE_PATH
+%B%{$fg_bold[green]%}λ %{$fg_bold[cyan]%}%c%{$reset_color%}%b\$(git-radar --zsh --fetch) ➜ "' >> $SHELL_FILE_PATH
 
 
 # Aliases

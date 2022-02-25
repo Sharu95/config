@@ -321,7 +321,7 @@
     "Green Component" : 0.44313725829124451
   },
   "Name" : "Main | Windowed | Old",
-  "Blinking Cursor" : false,
+  "Blinking Cursor" : true,
   "Guid" : "CFF106D5-7D78-41D2-BCDA-379DF9042D62",
   "Idle Code" : 0,
   "Ansi 10 Color" : {
@@ -355,7 +355,7 @@
     "Green Component" : 0
   },
   "Blur" : true,
-  "Normal Font" : "Monaco 12",
+  "Normal Font" : "FiraCodeRoman-Medium 12",
   "Vertical Spacing" : 1,
   "Ansi 7 Color" : {
     "Red Component" : 1,
@@ -420,7 +420,8 @@
     "Blue Component" : 0.91764706373214722,
     "Alpha Component" : 1,
     "Green Component" : 0.57254904508590698
-  }
+  },
+  "ASCII Ligatures" : true
 },
 {
   "Working Directory" : "",
@@ -928,7 +929,7 @@
   "Bound Hosts" : [
 
   ],
-  "Non Ascii Font" : "Monaco 12",
+  "Non Ascii Font" : "FiraCodeRoman-Regular 12",
   "Ansi 13 Color" : {
     "Red Component" : 0.7803921568627451,
     "Color Space" : "sRGB",
