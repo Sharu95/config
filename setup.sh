@@ -1,34 +1,37 @@
 setup() {
-    # Dotfiles and general configs
-    cp dotfiles/.tmux.conf $HOME/.tmux.conf
-    cp dotfiles/.vimrc $HOME/.vimrc
     if [[ ! -d "$HOME/.gradle" ]]
     then 
-        echo "Creating .gradle folder"
+        echo "| Creating .gradle folder"
         mkdir "$HOME/.gradle"
     fi
     cp build/gradle.properties .gradle
 
+    # Dotfiles and general configs
+    cp dotfiles/.tmux.conf $HOME/.tmux.conf
+    cp dotfiles/.vimrc $HOME/.vimrc
+
+    # Set init iterm preferences
+    # TODO: add Iterm2 python API script
+    cd iterm 
+    zsh init.sh
+
     # Init shell and libraries
-    cd shell
-    zsh 1_init_install.sh
-    zsh 2_init_brew.sh
-    zsh 3_init_env.sh
-    zsh 4_init_shell.sh
+    cd ../shell
+    zsh init.sh
 
     # Init VS code
     cd ../vscode
     zsh init.sh $1
 
     cd ../python
-    zsh init_python_env.sh
+    zsh init.sh
 
-    # TODO: add Iterm2 python API script
 }
 
 if [[ $# == 0 ]]
 then 
-    echo "No platform/machine specified"
+    echo "| No platform/machine specified"
+    exit
 else
     setup $1
 fi

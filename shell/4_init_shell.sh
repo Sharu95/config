@@ -66,7 +66,7 @@ echo >> $SHELL_FILE_PATH
 # Functions
 echo >> $SHELL_FILE_PATH
 echo '################## Functions ##################' >> $SHELL_FILE_PATH
-cat custom_fun_pythonenv.sh >> $SHELL_FILE_PATH
+cat scripts/custom_fun_pythonenv.sh >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
 
 
