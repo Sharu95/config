@@ -15,6 +15,7 @@ brew install readline
 brew install sqlite3 
 brew install xz
 brew install zlib
+brew install gh
 
 # Casks 
 brew install --cask docker
