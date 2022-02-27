@@ -76,8 +76,8 @@ echo 'eval "$(pyenv init -)"' >> $SHELL_FILE_PATH
 echo 'source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"' >> $SHELL_FILE_PATH
 echo 'source "$(brew --prefix)/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"' >> $SHELL_FILE_PATH
 echo '[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"' >> $SHELL_FILE_PATH
-echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" # Load NVM' >> $SHELL_FILE_PATH
-echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # Load NVM bash_completion' >> $SHELL_FILE_PATH
+echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # Load NVM' >> $SHELL_FILE_PATH
+echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # Load NVM bash_completion' >> $SHELL_FILE_PATH
 
 echo 'eval "$(pyenv init --path)"' >> $SHELL_FILE_PROFILE_PATH
 
