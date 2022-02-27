@@ -83,4 +83,5 @@ echo 'eval "$(pyenv init --path)"' >> $SHELL_FILE_PROFILE_PATH
 
 # Init
 source $SHELL_FILE_PATH
+exec zsh
 
