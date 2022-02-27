@@ -54,7 +54,7 @@ echo 'export PROMPT="
 echo >> $SHELL_FILE_PATH
 echo '################## Aliases ##################' >> $SHELL_FILE_PATH
 echo '# General' >> $SHELL_FILE_PATH
-echo 'alias ls="ls -GaFfl"' >> $SHELL_FILE_PATH
+echo 'alias ls="ls -FlaGh"' >> $SHELL_FILE_PATH
 echo 'alias p=python3' >> $SHELL_FILE_PATH
 echo 'alias restart="exec zsh"' >> $SHELL_FILE_PATH
 echo 'alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"' >> $SHELL_FILE_PATH
