@@ -16,6 +16,8 @@ brew install sqlite3
 brew install xz
 brew install zlib
 brew install gh
+brew install neofetch
+brew install onefetch
 
 # Casks 
 brew install --cask docker
