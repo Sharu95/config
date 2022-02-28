@@ -8,4 +8,5 @@ plugins=(
 	docker
 	gh
 	sdk
+	copybuffer
 )

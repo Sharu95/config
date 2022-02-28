@@ -45,16 +45,19 @@ echo '# export CPPFLAGS="-I/opt/homebrew/opt/zlib/include:$CPPFLAGS"' >> $SHELL_
 echo '# export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig:$PKG_CONFIG_PATH"' >> $SHELL_FILE_PATH
 
 echo 'setopt PROMPT_SUBST' >> $SHELL_FILE_PATH
-echo 'export RPROMPT="🚗 💨 💨 %{$fg_bold[cyan]%}%T %D{%a %d %b}%{$reset_color%} | \$(battery_pct_prompt)"' >> $SHELL_FILE_PATH
+echo 'export RPROMPT="%B🚗 💨 💨 %{$fg_bold[cyan]%}%D{%a %d %b} %T %{$reset_color%} | \$(battery_pct_prompt)%b"' >> $SHELL_FILE_PATH
 echo 'export PROMPT="
 %B%{$fg_bold[green]%}λ %{$fg_bold[cyan]%}%c%{$reset_color%}%b\$(git-radar --zsh --fetch) ➜ "' >> $SHELL_FILE_PATH
 
+echo >> $SHELL_FILE_PATH
+echo 'setopt MENU_COMPLETE' >> $SHELL_FILE_PATH
+echo 'setopt CORRECT_ALL' >> $SHELL_FILE_PATH
 
 # Aliases
 echo >> $SHELL_FILE_PATH
 echo '################## Aliases ##################' >> $SHELL_FILE_PATH
 echo '# General' >> $SHELL_FILE_PATH
-echo 'alias ls="ls -GaFfl"' >> $SHELL_FILE_PATH
+echo 'alias ls="ls -FlaGh"' >> $SHELL_FILE_PATH
 echo 'alias p=python3' >> $SHELL_FILE_PATH
 echo 'alias restart="exec zsh"' >> $SHELL_FILE_PATH
 echo 'alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"' >> $SHELL_FILE_PATH
@@ -76,11 +79,12 @@ echo 'eval "$(pyenv init -)"' >> $SHELL_FILE_PATH
 echo 'source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"' >> $SHELL_FILE_PATH
 echo 'source "$(brew --prefix)/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"' >> $SHELL_FILE_PATH
 echo '[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"' >> $SHELL_FILE_PATH
-echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" # Load NVM' >> $SHELL_FILE_PATH
-echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # Load NVM bash_completion' >> $SHELL_FILE_PATH
+echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # Load NVM' >> $SHELL_FILE_PATH
+echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # Load NVM bash_completion' >> $SHELL_FILE_PATH
 
 echo 'eval "$(pyenv init --path)"' >> $SHELL_FILE_PROFILE_PATH
 
 # Init
 source $SHELL_FILE_PATH
+exec zsh
 
