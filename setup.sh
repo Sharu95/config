@@ -1,36 +1,31 @@
+autoload -Uz colors; colors; 
 setup() {
     if [[ ! -d "$HOME/.gradle" ]]
     then 
-        echo "| Creating .gradle folder"
+        echo "$fg_bold[cyan]-> Creating .gradle folder$reset_color"
         mkdir "$HOME/.gradle"
     fi
-    cp build/gradle.properties .gradle
+    echo "$fg_bold[cyan]-> Moving gradle config$reset_color"
+    cp "build/gradle.properties" "$HOME/.gradle"
 
     # Dotfiles and general configs
+    echo "$fg_bold[cyan]-> Moving dotfiles$reset_color"
     cp dotfiles/.tmux.conf $HOME/.tmux.conf
     cp dotfiles/.vimrc $HOME/.vimrc
 
-    # Set init iterm preferences
-    # TODO: add Iterm2 python API script
-    cd iterm 
-    zsh init.sh
-
-    # Init shell and libraries
-    cd ../shell
-    zsh init.sh
-
-    # Init VS code
-    cd ../vscode
-    zsh init.sh $1
-
-    cd ../python
-    zsh init.sh
-
+    FOLDERS=("iterm" "shell" "vscode" "python")
+    for f in ${FOLDERS[@]}
+    do  
+        cd $f
+        echo "$fg_bold[cyan]-> Running setup in $f$reset_color"
+        source init.sh
+        cd ../
+    done
 }
 
 if [[ $# == 0 ]]
 then 
-    echo "| No platform/machine specified"
+    echo "$fg_bold[red]No platform/machine specified <mac | linux>$reset_color"
     exit
 else
     setup $1
