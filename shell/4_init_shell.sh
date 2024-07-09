@@ -1,6 +1,5 @@
-SHELL_FILE_PATH=".zshrc"
-SHELL_FILE_PROFILE_PATH=".zprofile"
-# SHELL_FILE_PATH="testfile.sh"
+SHELL_FILE_PATH="$HOME/.zshrc"
+SHELL_FILE_PROFILE_PATH="$HOME/.zprofile"
 
 # Add plugins
 cat plugins.txt >> $SHELL_FILE_PATH
