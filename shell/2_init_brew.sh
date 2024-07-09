@@ -18,6 +18,10 @@ brew install zlib
 brew install gh
 brew install neofetch
 brew install onefetch
+brew install chroma
+brew install pygments
+brew install fzf
+brew install jq
 
 # Casks 
 brew install --cask docker
@@ -30,14 +34,19 @@ brew install --cask postman
 brew install --cask intellij-idea
 brew install --cask slack
 brew install --cask aws-vault
+brew install --cask betterdisplay
+brew install --cask displaylink
+brew install --cask amethyst
 
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 
+brew tap common-fate/granted
+brew install granted
+
 # Optional ones
 # brew install --cask ngrok
 # brew install --cask redisinsight
-# brew install jq
 # brew install nvm
 # brew install node
 # brew install yarn

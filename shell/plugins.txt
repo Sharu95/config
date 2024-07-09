@@ -1,4 +1,5 @@
 plugins=(
+	brew
 	battery
 	web-search
 	gradle
@@ -10,4 +11,7 @@ plugins=(
 	sdk
 	copybuffer
 	terraform
+	fzf
+	poetry
+	colorize
 )
