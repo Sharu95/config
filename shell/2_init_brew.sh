@@ -22,6 +22,7 @@ brew install chroma
 brew install pygments
 brew install fzf
 brew install jq
+brew install maccy 
 
 # Casks 
 brew install --cask docker
