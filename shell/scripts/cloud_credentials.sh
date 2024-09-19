@@ -49,8 +49,15 @@ awsenv() {
 	else
 		for e in "$@"
 		do
-			assume "$e" --export
-			assume -c "$e"
+			if [[ "$e" == */* ]]; then
+				service="${e#*/}"  
+				env="${e%%/*}"     
+			else
+				service="console"  
+				env="$e"
+			fi
+			assume "$env" --export
+			assume -c "$env" -s $service
 		done
 	fi 
 	
