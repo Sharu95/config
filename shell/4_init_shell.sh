@@ -107,7 +107,7 @@ echo >> $SHELL_FILE_PATH
 
 
 # Sources/activations
-echo 'eval "$(pyenv init --path)"' >> $SHELL_FILE_PATH
+# echo 'eval "$(pyenv init --path)"' >> $SHELL_FILE_PATH
 echo 'source <(fzf --zsh)' >> $SHELL_FILE_PATH
 echo 'fpath+=~/.zfunc' >> $SHELL_FILE_PATH
 echo 'autoload -Uz compinit && compinit' >> $SHELL_FILE_PATH
@@ -118,7 +118,7 @@ echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/n
 echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # Load NVM bash_completion' >> $SHELL_FILE_PATH
 
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
-echo 'eval "$(pyenv init --path)"' >> $SHELL_FILE_PROFILE_PATH
+# echo 'eval "$(pyenv init --path)"' >> $SHELL_FILE_PROFILE_PATH
 
 # Init
 source $SHELL_FILE_PATH
