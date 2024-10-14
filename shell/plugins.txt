@@ -9,6 +9,8 @@ plugins=(
 	aws
 	docker
 	gh
+	zsh-autosuggestions
+	fast-syntax-highlighting
 	copybuffer
 	terraform
 	fzf
