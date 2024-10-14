@@ -9,7 +9,6 @@ plugins=(
 	aws
 	docker
 	gh
-	sdk
 	copybuffer
 	terraform
 	fzf

@@ -25,8 +25,6 @@ echo 'export ZSH_COLORIZE_STYLE=material # https://pygments.org/styles/ or https
 echo 'export CONFIG_FOLDER="$HOME/configurations"' >> $SHELL_FILE_PATH
 echo 'export LAMBDA="\[\\033\]\[[38;5;208m\]λ\[\\033\]\[[0m\]"' >> $SHELL_FILE_PATH
 echo 'export VIRTUAL_ENV_FOLDER="$CONFIG_FOLDER/environments"' >> $SHELL_FILE_PATH
-echo 'export SDKMAN_DIR="$HOME/.sdkman"' >> $SHELL_FILE_PATH
-echo 'export NVM_DIR="$HOME/.nvm"' >> $SHELL_FILE_PATH
 echo 'export LOCAL_GRADLE_CACHE=1' >> $SHELL_FILE_PATH
 echo 'export GIT_RADAR_COLOR_BRANCH="$fg_bold[yellow]"' >> $SHELL_FILE_PATH
 
@@ -108,9 +106,6 @@ echo 'fpath+=~/.zfunc' >> $SHELL_FILE_PATH
 echo 'autoload -Uz compinit && compinit' >> $SHELL_FILE_PATH
 echo 'source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"' >> $SHELL_FILE_PATH
 echo 'source "$(brew --prefix)/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"' >> $SHELL_FILE_PATH
-echo '[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"' >> $SHELL_FILE_PATH
-echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # Load NVM' >> $SHELL_FILE_PATH
-echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # Load NVM bash_completion' >> $SHELL_FILE_PATH
 
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
 
