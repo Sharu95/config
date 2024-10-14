@@ -1,7 +1,7 @@
-# Install SDKMAN
-echo "| Installing $fg_bold[yellow]SDKMAN$reset_color"
-curl -s "https://get.sdkman.io" | zsh
-source "$HOME/.sdkman/bin/sdkman-init.sh"
+# Install SDKMAN, use asdf instead!
+# echo "| Installing $fg_bold[yellow]SDKMAN$reset_color"
+# curl -s "https://get.sdkman.io" | zsh
+# source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Install homebrew
 echo "| Installing $fg_bold[yellow]Homebrew$reset_color"
