@@ -29,8 +29,6 @@ echo 'export SDKMAN_DIR="$HOME/.sdkman"' >> $SHELL_FILE_PATH
 echo 'export NVM_DIR="$HOME/.nvm"' >> $SHELL_FILE_PATH
 echo 'export LOCAL_GRADLE_CACHE=1' >> $SHELL_FILE_PATH
 echo 'export GIT_RADAR_COLOR_BRANCH="$fg_bold[yellow]"' >> $SHELL_FILE_PATH
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> $SHELL_FILE_PATH
-echo 'export PATH="$PYENV_ROOT/shims:$PATH"' >> $SHELL_FILE_PATH
 
 echo >> $SHELL_FILE_PATH
 echo '# openssl@3' >> $SHELL_FILE_PATH
@@ -57,8 +55,6 @@ echo 'setopt PROMPT_SUBST' >> $SHELL_FILE_PATH
 echo 'export RPROMPT="%B🚗 💨 💨 %{$fg_bold[cyan]%}%D{%a %d %b} %T %{$reset_color%} | \$(battery_pct_prompt)%b"' >> $SHELL_FILE_PATH
 echo 'export PROMPT="
 %B%{$fg_bold[green]%}λ %{$fg_bold[cyan]%}%c%{$reset_color%}%b\$(git-radar --zsh --fetch) ➜ "' >> $SHELL_FILE_PATH
-echo 'export PATH="$HOME/.pyenv/shims:$PATH"' >> $SHELL_FILE_PATH
-echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> $SHELL_FILE_PATH
 echo 'export PATH="/Applications/Firefox.app/Contents/MacOS/firefox:$PATH"' >> $SHELL_FILE_PATH
 echo 'export PATH="$PATH:$HOME/.local/bin"' >> $SHELL_FILE_PATH
 
@@ -107,7 +103,6 @@ echo >> $SHELL_FILE_PATH
 
 
 # Sources/activations
-# echo 'eval "$(pyenv init --path)"' >> $SHELL_FILE_PATH
 echo 'source <(fzf --zsh)' >> $SHELL_FILE_PATH
 echo 'fpath+=~/.zfunc' >> $SHELL_FILE_PATH
 echo 'autoload -Uz compinit && compinit' >> $SHELL_FILE_PATH
@@ -118,7 +113,6 @@ echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/n
 echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # Load NVM bash_completion' >> $SHELL_FILE_PATH
 
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
-# echo 'eval "$(pyenv init --path)"' >> $SHELL_FILE_PROFILE_PATH
 
 # Init
 source $SHELL_FILE_PATH
