@@ -23,7 +23,8 @@ brew install pygments
 brew install fzf
 brew install jq
 brew install ijq
-brew install maccy 
+brew install maccy
+brew install asdf
 brew install terraform-docs
 
 # Casks 
