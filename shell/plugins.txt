@@ -1,4 +1,5 @@
 plugins=(
+	asdf
 	brew
 	battery
 	web-search
