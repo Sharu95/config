@@ -17,4 +17,5 @@ plugins=(
 	aws
 	fzf
 	colorize
+	git
 )
