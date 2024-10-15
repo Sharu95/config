@@ -56,7 +56,7 @@ awsenv() {
 				service="console"  
 				env="$e"
 			fi
-			assume "$env" --export
+			assume -t "$env" --export
 			assume -c "$env" -s $service
 		done
 	fi 
