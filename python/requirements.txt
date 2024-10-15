@@ -1,5 +1,0 @@
-pandas
-numpy
-jupyter
-notebook
-kotlin-jupyter-kernel
