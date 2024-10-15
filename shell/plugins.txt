@@ -1,4 +1,5 @@
 plugins=(
+	macos
 	asdf
 	brew
 	battery
@@ -6,14 +7,14 @@ plugins=(
 	gradle
 	z
 	colored-man-pages
-	aws
 	docker
 	gh
 	zsh-autosuggestions
 	fast-syntax-highlighting
 	copybuffer
 	terraform
-	fzf
 	poetry
+	aws
+	fzf
 	colorize
 )
