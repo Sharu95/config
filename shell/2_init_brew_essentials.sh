@@ -14,13 +14,14 @@ brew install asdf
 brew install terraform-docs
 
 # Casks 
-brew install --cask docker
+brew install --cask alt-tab
 brew install --cask firefox
 brew install --cask iterm2
 brew install --cask spotify
 brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask amethyst
+brew install --cask docker
 
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
