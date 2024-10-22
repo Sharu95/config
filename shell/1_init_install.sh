@@ -17,7 +17,7 @@ git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 echo "| Installing $fg_bold[yellow]Oh My Zsh$reset_color"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-FOLDERS=("configurations" ".nvm" ".pyenv")
+FOLDERS=("configurations")
 for f in ${FOLDERS[@]}
 do 
     echo "| Creating folder $fg_bold[yellow]$HOME/$f$reset_color"
