@@ -7,9 +7,6 @@ brew install readline
 brew install sqlite3 
 brew install xz
 brew install zlib
-brew install gh
-brew install chroma
-brew install pygments
 
 # Casks 
 brew install --cask google-chrome
