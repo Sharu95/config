@@ -1,7 +1,5 @@
 # Brew installations
 brew install michaeldfallen/formula/git-radar
-brew install zsh-autosuggestions
-brew install zsh-fast-syntax-highlighting
 brew install wget
 brew install awscli
 brew install neofetch
