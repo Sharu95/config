@@ -16,6 +16,7 @@ plugins=(
 	poetry
 	aws
 	fzf
+	fzf-tab
 	colorize
 	git
 )
