@@ -109,5 +109,6 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
 
 # Init
 source $SHELL_FILE_PATH
+enable-fzf-tab
 exec zsh
 
