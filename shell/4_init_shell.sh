@@ -103,12 +103,12 @@ echo >> $SHELL_FILE_PATH
 # Sources/activations
 echo 'source <(fzf --zsh)' >> $SHELL_FILE_PATH
 echo 'fpath+=~/.zfunc' >> $SHELL_FILE_PATH
+echo 'enable-fzf-tab' >> $SHELL_FILE_PATH
 echo 'autoload -Uz compinit && compinit' >> $SHELL_FILE_PATH
 
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
 
 # Init
 source $SHELL_FILE_PATH
-enable-fzf-tab
 exec zsh
 
