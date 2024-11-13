@@ -96,6 +96,7 @@ echo '
 ' >> $SHELL_FILE_PATH
 cat scripts/custom_fun_pythonenv.sh >> $SHELL_FILE_PATH
 cat scripts/cloud_credentials.sh >> $SHELL_FILE_PATH
+cat scripts/aws_athena.sh >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
 
 
