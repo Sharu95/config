@@ -13,6 +13,7 @@ brew install terraform-docs
 brew install gh
 brew install chroma
 brew install pygments
+brew install athenacli
 
 # Casks 
 brew install --cask alt-tab
