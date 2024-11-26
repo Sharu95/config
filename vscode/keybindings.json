@@ -34,14 +34,6 @@
     "when": "notebookCellListFocused && notebookCellType == 'code' || editorTextFocus && inputFocus && notebookEditorFocused"
   },
   {
-    "key": "shift+alt+cmd+right",
-    "command": "workbench.action.splitEditorRight"
-  },
-  {
-    "key": "cmd+k ctrl+shift+alt+cmd+7",
-    "command": "-workbench.action.splitEditorRight"
-  },
-  {
     "key": "shift+alt+cmd+left",
     "command": "workbench.action.splitEditorLeft"
   },
@@ -65,4 +57,33 @@
     "key": "cmd+k ctrl+shift+alt+cmd+7",
     "command": "-workbench.action.splitEditorDown"
   },
+  {
+    "key": "ctrl+shift+cmd+right",
+    "command": "-editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+cmd+left",
+    "command": "workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "cmd+k shift+cmd+left",
+    "command": "-workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "ctrl+shift+cmd+right",
+    "command": "workbench.action.moveEditorToRightGroup"
+  },
+  {
+    "key": "ctrl+shift+cmd+left",
+    "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "ctrl+shift+cmd+up",
+    "command": "workbench.action.moveEditorToAboveGroup"
+  },
+  {
+    "key": "ctrl+shift+cmd+down",
+    "command": "workbench.action.moveEditorToBelowGroup"
+  }
 ]
