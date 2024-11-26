@@ -1,4 +1,5 @@
-{
+{   
+    "intellij-idea-keybindings.useCamelHumpsWords": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Material Theme High Contrast",
     "material-icon-theme.folders.theme": "specific",
@@ -89,5 +90,6 @@
             "query": "whos",
             "parseExpr": "'(\\w+)'"
         }
-    ]
+    ],
+    "database-client.autoSync": true
 }
