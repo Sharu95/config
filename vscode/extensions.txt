@@ -1,5 +1,6 @@
 amazonwebservices.aws-toolkit-vscode
 dunstontc.viml
+eamodio.gitlens
 equinusocio.vsc-material-theme
 equinusocio.vsc-material-theme-icons
 firefox-devtools.vscode-firefox-debug
