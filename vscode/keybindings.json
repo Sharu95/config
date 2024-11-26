@@ -6,14 +6,6 @@
     "when": "terminal.active"
   },
   {
-    "key": "cmd+1",
-    "command": "-workbench.action.focusFirstEditorGroup"
-  },
-  {
-    "key": "cmd+1",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
     "key": "shift+enter",
     "command": "notebook.cell.executeAndSelectBelow",
     "when": "{   \"key\": \"ctrl+enter\",   \"command\": \"notebook.cell.execute\",   \"when\": \"notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0\" }"
@@ -34,24 +26,12 @@
     "when": "notebookCellListFocused && notebookCellType == 'code' || editorTextFocus && inputFocus && notebookEditorFocused"
   },
   {
-    "key": "shift+alt+cmd+left",
-    "command": "workbench.action.splitEditorLeft"
-  },
-  {
     "key": "cmd+k ctrl+shift+alt+cmd+7",
     "command": "-workbench.action.splitEditorLeft"
   },
   {
-    "key": "shift+alt+cmd+up",
-    "command": "workbench.action.splitEditorUp"
-  },
-  {
     "key": "cmd+k ctrl+shift+alt+cmd+7",
     "command": "-workbench.action.splitEditorUp"
-  },
-  {
-    "key": "shift+alt+cmd+down",
-    "command": "workbench.action.splitEditorDown"
   },
   {
     "key": "cmd+k ctrl+shift+alt+cmd+7",
@@ -85,5 +65,19 @@
   {
     "key": "ctrl+shift+cmd+down",
     "command": "workbench.action.moveEditorToBelowGroup"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "cmd+k ctrl+shift+alt+cmd+7",
+    "command": "-workbench.action.splitEditorRight"
+  },
+  {
+    "key": "cmd+1",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
   }
 ]
