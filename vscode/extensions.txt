@@ -23,4 +23,5 @@ ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
 ms-vscode.remote-explorer
 oderwat.indent-rainbow
+pjmiravalle.terraform-advanced-syntax-highlighting
 pkief.material-icon-theme
