@@ -33,4 +33,36 @@
     "command": "-notebook.cell.executeAndSelectBelow",
     "when": "notebookCellListFocused && notebookCellType == 'code' || editorTextFocus && inputFocus && notebookEditorFocused"
   },
+  {
+    "key": "shift+alt+cmd+right",
+    "command": "workbench.action.splitEditorRight"
+  },
+  {
+    "key": "cmd+k ctrl+shift+alt+cmd+7",
+    "command": "-workbench.action.splitEditorRight"
+  },
+  {
+    "key": "shift+alt+cmd+left",
+    "command": "workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "cmd+k ctrl+shift+alt+cmd+7",
+    "command": "-workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "shift+alt+cmd+up",
+    "command": "workbench.action.splitEditorUp"
+  },
+  {
+    "key": "cmd+k ctrl+shift+alt+cmd+7",
+    "command": "-workbench.action.splitEditorUp"
+  },
+  {
+    "key": "shift+alt+cmd+down",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "cmd+k ctrl+shift+alt+cmd+7",
+    "command": "-workbench.action.splitEditorDown"
+  },
 ]
