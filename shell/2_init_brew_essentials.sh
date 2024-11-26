@@ -24,6 +24,7 @@ brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask amethyst
 brew install --cask docker
+brew install --cask beekeeper-studio
 
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
