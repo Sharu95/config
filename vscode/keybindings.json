@@ -40,5 +40,10 @@
   {
     "key": "ctrl+shift+cmd+down",
     "command": "workbench.action.moveEditorToBelowGroup"
+  },
+  {
+    "key": "ctrl+shift+cmd+b",
+    "command": "gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:blameable'"
   }
 ]
