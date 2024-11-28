@@ -14,7 +14,7 @@
     },
     "editor.suggest.preview": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Material Theme High Contrast",
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
     "material-icon-theme.folders.theme": "specific",
     "materialTheme.accent": "Cyan",
     "material-icon-theme.activeIconPack": "react_redux",
@@ -104,5 +104,12 @@
             "parseExpr": "'(\\w+)'"
         }
     ],
-    "database-client.autoSync": true
+    "database-client.autoSync": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "gitlens.autolinks": [
+        {
+            "url": "https://toil.kitemaker.co/wK3AQr-Sensorita/aEJyFU-Sensorita/items/"
+        }
+    ],
+    "gitlens.hovers.currentLine.over": "line"
 }
