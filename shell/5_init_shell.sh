@@ -58,7 +58,6 @@ echo 'export PATH="$PATH:$HOME/.local/bin"' >> $SHELL_FILE_PATH
 
 echo >> $SHELL_FILE_PATH
 echo 'setopt MENU_COMPLETE' >> $SHELL_FILE_PATH
-echo 'setopt CORRECT_ALL' >> $SHELL_FILE_PATH
 
 # Aliases
 echo >> $SHELL_FILE_PATH
