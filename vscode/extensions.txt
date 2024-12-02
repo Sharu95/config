@@ -6,6 +6,7 @@ equinusocio.vsc-material-theme-icons
 firefox-devtools.vscode-firefox-debug
 fwcd.kotlin
 github.github-vscode-theme
+gruntfuggly.todo-tree
 hashicorp.terraform
 k--kato.intellij-idea-keybindings
 mathiasfrohlich.kotlin
