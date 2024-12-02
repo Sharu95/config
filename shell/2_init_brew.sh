@@ -18,9 +18,5 @@ brew install --cask displaylink
 # More optional ones
 # brew install --cask ngrok
 # brew install --cask redisinsight
-# brew install nvm
-# brew install node
 # brew install yarn
 # brew install redis
-# brew install tfenv
-# brew install tgenv

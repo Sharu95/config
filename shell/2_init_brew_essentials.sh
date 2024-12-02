@@ -9,7 +9,6 @@ brew install jq
 brew install ijq
 brew install maccy
 brew install asdf
-brew install terraform-docs
 brew install gh
 brew install chroma
 brew install pygments
