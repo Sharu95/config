@@ -1,7 +1,4 @@
 {
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8"
-    },
     "typescript.inlayHints.variableTypes.enabled": true,
     "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
     "intellij-idea-keybindings.useCamelHumpsWords": true,
