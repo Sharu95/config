@@ -12,7 +12,9 @@ k--kato.intellij-idea-keybindings
 mathiasfrohlich.kotlin
 mechatroner.rainbow-csv
 minhthai.vscode-todo-parser
+ms-python.autopep8
 ms-python.debugpy
+ms-python.flake8
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
