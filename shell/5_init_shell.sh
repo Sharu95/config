@@ -49,9 +49,17 @@ echo '# export CPPFLAGS="-I/opt/homebrew/opt/zlib/include:$CPPFLAGS"' >> $SHELL_
 echo '# export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig:$PKG_CONFIG_PATH"' >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
 
+echo 'ZSH_THEME_AWS_DIVIDER=":"' >> $SHELL_FILE_PATH
+echo 'ZSH_THEME_AWS_PROFILE_PREFIX="%{$FG[208]%}"' >> $SHELL_FILE_PATH
+echo 'ZSH_THEME_AWS_PROFILE_SUFFIX="%{$reset_color%}"' >> $SHELL_FILE_PATH
+echo 'ZSH_THEME_AWS_REGION_PREFIX="%{$FG[208]%}"' >> $SHELL_FILE_PATH
+echo 'ZSH_THEME_AWS_REGION_SUFFIX="%{$reset_color%}"' >> $SHELL_FILE_PATH
+echo >> $SHELL_FILE_PATH
+
 echo 'setopt PROMPT_SUBST' >> $SHELL_FILE_PATH
 echo 'export RPROMPT="%B🚗 💨 💨 %{$fg_bold[cyan]%}%D{%a %d %b} %T %{$reset_color%} | \$(battery_pct_prompt)%b"' >> $SHELL_FILE_PATH
 echo 'export PROMPT="
+\$(aws_prompt_info)
 %B%{$fg_bold[green]%}λ %{$fg_bold[cyan]%}%c%{$reset_color%}%b\$(git-radar --zsh --fetch) ➜ "' >> $SHELL_FILE_PATH
 echo 'export PATH="/Applications/Firefox.app/Contents/MacOS/firefox:$PATH"' >> $SHELL_FILE_PATH
 echo 'export PATH="$PATH:$HOME/.local/bin"' >> $SHELL_FILE_PATH
