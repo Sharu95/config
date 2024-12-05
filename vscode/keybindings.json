@@ -6,6 +6,11 @@
     "when": "terminal.active"
   },
   {
+    "key": "shift+cmd+2",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "!panelFocus"
+  },
+  {
     "key": "shift+enter",
     "command": "notebook.cell.executeAndSelectBelow",
     "when": "{   \"key\": \"ctrl+enter\",   \"command\": \"notebook.cell.execute\",   \"when\": \"notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0\" }"
