@@ -94,7 +94,8 @@ echo 'alias restart="exec zsh"' >> $SHELL_FILE_PATH
 echo 'alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"' >> $SHELL_FILE_PATH
 echo 'alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"' >> $SHELL_FILE_PATH
 echo 'alias trestart="tmux source $HOME/.tmux.conf"' >> $SHELL_FILE_PATH
-echo 'alias less="f() { cless $@ }; f"' >> $SHELL_FILE_PATH
+echo 'alias less=cless' >> $SHELL_FILE_PATH
+echo 'alias cat=ccat' >> $SHELL_FILE_PATH
 echo 'alias assume=". assume"' >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
 
