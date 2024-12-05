@@ -1,15 +1,9 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
   {
     "key": "shift+cmd+2",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
   },
-  // {
-  //   "key": "shift+cmd+2",
-  //   "command": "workbench.action.toggleMaximizedPanel",
-  //   "when": "!panelFocus"
-  // },
   {
     "key": "shift+enter",
     "command": "notebook.cell.executeAndSelectBelow",

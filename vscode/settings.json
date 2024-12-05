@@ -4,6 +4,7 @@
     "intellij-idea-keybindings.useCamelHumpsWords": true,
     "terraform.experimentalFeatures.prefillRequiredFields": true,
     "terraform.codelens.referenceCount": true,
+    "workbench.panel.opensMaximized": "always",
     "[terraform]": {
         "editor.defaultFormatter": "hashicorp.terraform",
         "editor.formatOnSave": true,
