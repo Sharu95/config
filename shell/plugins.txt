@@ -19,4 +19,5 @@ plugins=(
 	fzf-tab
 	colorize
 	git
+	autoswitch_virtualenv
 )
