@@ -1,5 +1,7 @@
 # Other installs might be used in aliases
 gem install colorls
+mkdir -p $HOME/.config/colorls
+cp "./config/dark_colors.yaml" $HOME/.config/colorls/dark_colors.yaml
 
 SHELL_FILE_PATH="$HOME/.zshrc"
 SHELL_FILE_PROFILE_PATH="$HOME/.zprofile"
