@@ -452,6 +452,11 @@
     "Green Component" : 0.1491314172744751
   },
   "Smart Cursor Color" : false,
+  "Semantic History" : {
+    "text" : "",
+    "action" : "editor",
+    "editor" : "com.microsoft.VSCode"
+  },
   "Ambiguous Double Width" : false,
   "Blur Radius" : 6.2173930854438906,
   "Ansi 0 Color" : {
@@ -462,7 +467,7 @@
     "Green Component" : 0
   },
   "Blur" : true,
-  "Normal Font" : "FiraCodeRoman-Regular 12",
+  "Normal Font" : "FiraCodeRoman-Regular 13",
   "Vertical Spacing" : 1,
   "Use Underline Color" : false,
   "Ansi 7 Color" : {
