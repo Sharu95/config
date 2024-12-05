@@ -20,4 +20,5 @@ plugins=(
 	colorize
 	git
 	autoswitch_virtualenv
+	gh
 )
