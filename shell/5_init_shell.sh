@@ -60,7 +60,7 @@ echo 'ZSH_THEME_AWS_REGION_SUFFIX="%{$reset_color%}"' >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
 
 echo 'setopt PROMPT_SUBST' >> $SHELL_FILE_PATH
-echo 'export RPROMPT="%B🚗 💨 💨 %{$fg_bold[cyan]%}%D{%a %d %b} %T %{$reset_color%} | \$(battery_pct_prompt)%b"' >> $SHELL_FILE_PATH
+echo 'export RPROMPT="%B%{$fg_bold[cyan]%}%D{%a %d %b} %T %{$reset_color%} | \$(battery_pct_prompt)%b"' >> $SHELL_FILE_PATH
 echo 'export PROMPT="
 \$(aws_prompt_info)
 %B%{$fg_bold[green]%}λ %{$fg_bold[cyan]%}%c%{$reset_color%}%b\$(git-radar --zsh --fetch) ➜ "' >> $SHELL_FILE_PATH
