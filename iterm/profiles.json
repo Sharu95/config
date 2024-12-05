@@ -453,8 +453,8 @@
   },
   "Smart Cursor Color" : false,
   "Semantic History" : {
-    "text" : "",
     "action" : "editor",
+    "text" : "",
     "editor" : "com.microsoft.VSCode"
   },
   "Ambiguous Double Width" : false,

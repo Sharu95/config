@@ -4,6 +4,7 @@ mkdir $HOME/.oh-my-zsh/custom/completions
 gem install colorls
 mkdir -p $HOME/.config/colorls
 cp "./config/dark_colors.yaml" $HOME/.config/colorls/dark_colors.yaml
+cp "./config/.p10k.zsh" $HOME/.p10k.zsh
 
 SHELL_FILE_PATH="$HOME/.zshrc"
 SHELL_FILE_PROFILE_PATH="$HOME/.zprofile"
@@ -13,6 +14,7 @@ cat plugins.txt >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
 echo "export FZF_DEFAULT_OPTS=\"--preview 'bat --color=always {}'\"" >> $SHELL_FILE_PATH
+echo 'ZSH_THEME="powerlevel10k/powerlevel10k"' >> $SHELL_FILE_PATH
 echo 'source $ZSH/oh-my-zsh.sh' >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
 
@@ -124,7 +126,7 @@ echo 'fpath+=$HOME/.zfunc' >> $SHELL_FILE_PATH
 echo 'fpath+=$HOME/.oh-my-zsh/custom/completions' >> $SHELL_FILE_PATH
 echo 'enable-fzf-tab' >> $SHELL_FILE_PATH
 echo 'autoload -Uz compinit && compinit' >> $SHELL_FILE_PATH
-
+echo '[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh' >> $SHELL_FILE_PATH
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
 
 # Init
