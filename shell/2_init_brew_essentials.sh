@@ -27,6 +27,7 @@ brew install --cask beekeeper-studio
 
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
+brew install --cask font-hack-nerd-font
 
 brew tap common-fate/granted
 brew install granted

@@ -1,3 +1,6 @@
+# Other installs might be used in aliases
+gem install colorls
+
 SHELL_FILE_PATH="$HOME/.zshrc"
 SHELL_FILE_PROFILE_PATH="$HOME/.zprofile"
 
@@ -80,7 +83,8 @@ echo '
 
 ' >> $SHELL_FILE_PATH
 echo '# General' >> $SHELL_FILE_PATH
-echo 'alias ls="ls -FlaGh"' >> $SHELL_FILE_PATH
+echo '#alias ls="ls -FlaGh"' >> $SHELL_FILE_PATH
+echo 'alias ls="colorls -lA --sd --gs"' >> $SHELL_FILE_PATH
 echo 'alias p=python3' >> $SHELL_FILE_PATH
 echo 'alias restart="exec zsh"' >> $SHELL_FILE_PATH
 echo 'alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"' >> $SHELL_FILE_PATH
