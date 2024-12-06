@@ -10,6 +10,7 @@ gruntfuggly.todo-tree
 hashicorp.terraform
 iterative.dvc
 k--kato.intellij-idea-keybindings
+lucien-martijn.parquet-visualizer
 mathiasfrohlich.kotlin
 mechatroner.rainbow-csv
 minhthai.vscode-todo-parser
