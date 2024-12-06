@@ -21,4 +21,5 @@ plugins=(
 	git
 	autoswitch_virtualenv
 	gh
+	terraform
 )
