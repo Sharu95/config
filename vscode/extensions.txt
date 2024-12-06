@@ -30,4 +30,5 @@ ms-vscode.remote-explorer
 oderwat.indent-rainbow
 pjmiravalle.terraform-advanced-syntax-highlighting
 pkief.material-icon-theme
+redhat.vscode-yaml
 tomoki1207.pdf
