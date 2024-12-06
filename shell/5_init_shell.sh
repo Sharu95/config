@@ -3,7 +3,7 @@ mkdir $ZSH_CUSTOM/completions
 
 gem install colorls
 mkdir -p $HOME/.config/colorls
-cp "./config/dark_colors.yaml" $HOME/.config/colorls/dark_colors.yaml
+cp "./config/colorls_dark_colors.yaml" $HOME/.config/colorls/dark_colors.yaml
 cp "./config/.p10k.zsh" $HOME/.p10k.zsh
 
 SHELL_FILE_PATH="$HOME/.zshrc"
