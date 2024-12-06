@@ -129,6 +129,8 @@ echo 'autoload -Uz compinit && compinit' >> $SHELL_FILE_PATH
 echo '[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh' >> $SHELL_FILE_PATH
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
 
+curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | zsh
+
 # Init
 source $SHELL_FILE_PATH
 exec zsh
