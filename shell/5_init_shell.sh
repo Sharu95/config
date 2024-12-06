@@ -1,5 +1,5 @@
 # Other installs might be used in aliases
-mkdir $HOME/.oh-my-zsh/custom/completions
+mkdir $ZSH_CUSTOM/completions
 
 gem install colorls
 mkdir -p $HOME/.config/colorls
@@ -123,7 +123,7 @@ echo >> $SHELL_FILE_PATH
 # Sources/activations
 echo 'source <(fzf --zsh)' >> $SHELL_FILE_PATH
 echo 'fpath+=$HOME/.zfunc' >> $SHELL_FILE_PATH
-echo 'fpath+=$HOME/.oh-my-zsh/custom/completions' >> $SHELL_FILE_PATH
+echo 'fpath+=$ZSH_CUSTOM/completions' >> $SHELL_FILE_PATH
 echo 'enable-fzf-tab' >> $SHELL_FILE_PATH
 echo 'autoload -Uz compinit && compinit' >> $SHELL_FILE_PATH
 echo '[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh' >> $SHELL_FILE_PATH
