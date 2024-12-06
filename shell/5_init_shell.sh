@@ -92,7 +92,7 @@ echo '# General' >> $SHELL_FILE_PATH
 echo '#alias ls="ls -FlaGh"' >> $SHELL_FILE_PATH
 echo 'alias ls="colorls -lA --sd --gs"' >> $SHELL_FILE_PATH
 echo 'alias p=python3' >> $SHELL_FILE_PATH
-echo 'alias restart="exec zsh"' >> $SHELL_FILE_PATH
+echo 'alias restart="source $ZSH/oh-my-zsh.sh"' >> $SHELL_FILE_PATH
 echo 'alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"' >> $SHELL_FILE_PATH
 echo 'alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"' >> $SHELL_FILE_PATH
 echo 'alias trestart="tmux source $HOME/.tmux.conf"' >> $SHELL_FILE_PATH
