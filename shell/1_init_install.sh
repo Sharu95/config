@@ -1,8 +1,3 @@
-# Install SDKMAN, use asdf instead!
-# echo "| Installing $fg_bold[yellow]SDKMAN$reset_color"
-# curl -s "https://get.sdkman.io" | zsh
-# source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 # Install homebrew
 echo "| Installing $fg_bold[yellow]Homebrew$reset_color"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -17,11 +12,11 @@ git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 echo "| Installing $fg_bold[yellow]Oh My Zsh$reset_color"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-FOLDERS=("configurations")
+FOLDERS=(".config/custom/")
 for f in ${FOLDERS[@]}
 do 
     echo "| Creating folder $fg_bold[yellow]$HOME/$f$reset_color"
-    mkdir "$HOME/$f"
+    mkdir -p "$HOME/$f"
 done
 
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
