@@ -120,7 +120,6 @@
     "gitlens.blame.avatars": false,
     "gitlens.blame.format": "${author}: ${message|50?} ${agoOrDate|14-}",
     "gitlens.blame.heatmap.location": "left",
-    "gitlens.blame.compact": false,
     "gitlens.blame.highlight.locations": [
         "gutter",
         "line",
