@@ -7,6 +7,7 @@ firefox-devtools.vscode-firefox-debug
 fwcd.kotlin
 github.github-vscode-theme
 gruntfuggly.todo-tree
+h5web.vscode-h5web
 hashicorp.terraform
 iterative.dvc
 k--kato.intellij-idea-keybindings
