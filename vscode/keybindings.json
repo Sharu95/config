@@ -76,5 +76,15 @@
     "key": "ctrl+shift+alt+cmd+8",
     "command": "-workbench.action.terminal.focusPrevious",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "c",
+    "command": "notebook.cell.changeToCode",
+    "when": "notebookEditorFocused && !inputFocus && !notebookOutputFocused && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'markup'"
+  },
+  {
+    "key": "y",
+    "command": "-notebook.cell.changeToCode",
+    "when": "notebookEditorFocused && !inputFocus && !notebookOutputFocused && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'markup'"
   }
 ]
