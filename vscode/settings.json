@@ -1,4 +1,5 @@
 {
+    "window.zoomLevel": 1,
     "typescript.inlayHints.variableTypes.enabled": true,
     "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
     "intellij-idea-keybindings.useCamelHumpsWords": true,
@@ -114,5 +115,14 @@
             "url": "https://toil.kitemaker.co/wK3AQr-Sensorita/aEJyFU-Sensorita/items/"
         }
     ],
-    "gitlens.hovers.currentLine.over": "line"
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.hovers.avatars": false,
+    "gitlens.blame.avatars": false,
+    "gitlens.blame.format": "${author}: ${message|50?} ${agoOrDate|14-}",
+    "gitlens.blame.heatmap.location": "left",
+    "gitlens.blame.highlight.locations": [
+        "gutter",
+        "line",
+        "overview"
+    ]
 }
