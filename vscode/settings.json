@@ -124,5 +124,6 @@
         "gutter",
         "line",
         "overview"
-    ]
+    ],
+    "merge-conflict.codeLens.enabled": false
 }
