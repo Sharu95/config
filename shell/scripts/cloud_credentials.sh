@@ -17,48 +17,31 @@ urlencode() {
 }
 
 
-# AWS Cloud credentials management, either using leapp or granted
-awsenv() {
+# AWS Cloud credentials management, using granted
+awsopen() {
 	if [[ "$#" < 1 ]]
 	then
-		echo "Usage: awsenv [leapp] [envs] - example: 'awsenv dev prod insight'"
+		echo "Usage: awsopen [envs] - example: 'awsopen dev prod insight'"
 		return
 	fi
 
-	if [[ "$1" == "leapp" ]]
-	then 
-		for e in "$@"
-		do
-			if [[ "$e" != "leapp" ]]
-			then
-				# Assume container name is same as provided env session name
-				# if not the same, change container name to same
-				AWS_ENV_SESSION_NAME=$e
-				FIREFOX_CONTAINER_TAB_NAME=$e
-				echo "| Creating new session: $AWS_ENV_SESSION_NAME"
-                leapp session start $AWS_ENV_SESSION_NAME --sessionRole=PowerUserAccess
-				SESSION_ID=$(leapp session list -x | grep -e '\bactive\b' | grep -e "\b${AWS_ENV_SESSION_NAME}\b" | cut -f2 -w)
-				SESSION_URL=$(leapp session open-web-console --sessionId=$SESSION_ID --print)
-				ENCODED_SESSION_URL=$(urlencode $SESSION_URL)
-
-				echo "| Opening console URL in container tab: $FIREFOX_CONTAINER_TAB_NAME"
-				echo "$AWS_ENV_SESSION_NAME: $SESSION_URL\n\n" | tee >(pbcopy)
-				firefox --new-tab "ext+container:name=${FIREFOX_CONTAINER_TAB_NAME}&url=${ENCODED_SESSION_URL}"
-			fi
-		done
-	else
-		for e in "$@"
+	for e in "$@"
 		do
 			if [[ "$e" == */* ]]; then
 				service="${e#*/}"  
-				env="${e%%/*}"     
+				profile="${e%%/*}"     
 			else
 				service="console"  
-				env="$e"
+				profile="$e"
 			fi
-			assume -t "$env" --export
-			assume -c "$env" -s $service
+			assume --console "$profile" --service $service
 		done
-	fi 
 	
+}
+
+awsinit() {
+	while read profile;
+		do
+			assume "$profile" --export
+		done <<< $(aws configure list-profiles)
 }
