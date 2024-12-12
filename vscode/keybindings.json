@@ -152,5 +152,15 @@
     "key": "cmd+k cmd+c",
     "command": "-notebook.cell.expandCellInput",
     "when": "notebookCellInputIsCollapsed && notebookCellListFocused"
+  },
+  {
+    "key": "alt+cmd+m",
+    "command": "editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   }
 ]
