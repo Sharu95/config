@@ -36,4 +36,5 @@ oderwat.indent-rainbow
 pjmiravalle.terraform-advanced-syntax-highlighting
 pkief.material-icon-theme
 redhat.vscode-yaml
+tamasfe.even-better-toml
 tomoki1207.pdf
