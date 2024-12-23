@@ -1,5 +1,6 @@
 # Other installs might be used in aliases
 mkdir $ZSH_CUSTOM/completions
+gh completion -s zsh > $ZSH_CUSTOM/completions/_gh
 
 gem install colorls
 mkdir -p $HOME/.config/colorls
