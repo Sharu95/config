@@ -40,8 +40,15 @@ awsopen() {
 }
 
 awsinit() {
-	while read profile;
-		do
-			assume "$profile" --export
-		done <<< $(aws configure list-profiles)
+	if [[ "$1" == "all" || -z "$1" ]]; then 
+		while read profile;
+			do
+				assume "$profile" --export
+			done <<< $(aws configure list-profiles)
+	else
+		for profile in "$@"
+		 	do 
+				assume "$profile" --export
+			done
+	fi
 }

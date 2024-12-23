@@ -1,0 +1,15 @@
+#compdef awsinit
+
+_awsinit() {
+  local state
+
+  _arguments \
+    '1: :->aws_profile'
+
+  case $state in
+    (aws_profile) _arguments '1:profiles:($(aws configure list-profiles))' ;;
+              (*) compadd "$@" $(aws configure list-profiles)
+  esac
+}
+
+_awsinit "$@"

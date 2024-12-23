@@ -1,6 +1,8 @@
 # Other installs might be used in aliases
 mkdir $ZSH_CUSTOM/completions
 gh completion -s zsh > $ZSH_CUSTOM/completions/_gh
+cp "./completions/_awsinit" $ZSH_CUSTOM/completions/
+cp "./completions/_awsopen" $ZSH_CUSTOM/completions/
 
 gem install colorls
 mkdir -p $HOME/.config/colorls
