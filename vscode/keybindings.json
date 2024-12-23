@@ -179,9 +179,9 @@
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "cmd+b",
+    "key": "cmd+shift+b",
     "command": "editor.action.openLink",
-    "when": "editorFocus"
+    "when": "editorTextFocus"
   },
   {
     "key": "cmd+b",
@@ -192,5 +192,15 @@
     "key": "shift+f12",
     "command": "-editor.action.goToReferences",
     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "workbench.action.tasks.build",
+    "when": "taskCommandsRegistered && !editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "-workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
   }
 ]
