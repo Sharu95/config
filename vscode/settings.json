@@ -119,12 +119,14 @@
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.hovers.avatars": false,
     "gitlens.blame.avatars": false,
-    "gitlens.blame.format": "${author}: ${message|50?} ${agoOrDate|14-}",
+    // "gitlens.blame.format": "${author}: ${message|50?} ${agoOrDate|14-}",
+    "gitlens.blame.format": "${author}: ${agoOrDate|14-}",
     "gitlens.blame.heatmap.location": "left",
     "gitlens.blame.highlight.locations": [
         "gutter",
         "line",
         "overview"
     ],
-    "merge-conflict.codeLens.enabled": false
+    "merge-conflict.codeLens.enabled": false,
+    "gitlens.blame.compact": false
 }
