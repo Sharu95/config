@@ -202,5 +202,15 @@
     "key": "shift+cmd+b",
     "command": "-workbench.action.tasks.build",
     "when": "taskCommandsRegistered"
+  },
+  {
+    "key": "alt+cmd+v",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+f6",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   }
 ]
