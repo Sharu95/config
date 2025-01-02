@@ -12,6 +12,7 @@ setup() {
     echo "$fg_bold[cyan]-> Moving dotfiles$reset_color"
     cp dotfiles/.tmux.conf $HOME/.tmux.conf
     cp dotfiles/.vimrc $HOME/.vimrc
+    cp dotfiles/.gitconfig $HOME/.gitconfig
 
     FOLDERS=("iterm" "shell" "vscode" "python")
     for f in ${FOLDERS[@]}

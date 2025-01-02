@@ -1,0 +1,7 @@
+[user]
+    name = Sharanan Kulam
+    email = sharu95@users.noreply.github.com
+[pull]
+	rebase = false
+[push]
+    autoSetupRemote = true
