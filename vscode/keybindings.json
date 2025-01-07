@@ -222,5 +222,15 @@
     "key": "shift+cmd+1",
     "command": "-search.action.replace",
     "when": "isEditableItem && matchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus"
   }
 ]
