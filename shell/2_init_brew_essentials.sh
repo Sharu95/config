@@ -13,6 +13,7 @@ brew install gh
 brew install chroma
 brew install pygments
 brew install athenacli
+brew install eza
 
 # Casks 
 brew install --cask alt-tab
