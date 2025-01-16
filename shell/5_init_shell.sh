@@ -128,12 +128,13 @@ echo 'source <(fzf --zsh)' >> $SHELL_FILE_PATH
 echo 'fpath+=$HOME/.zfunc' >> $SHELL_FILE_PATH
 echo 'fpath+=$ZSH_CUSTOM/completions' >> $SHELL_FILE_PATH
 echo 'enable-fzf-tab' >> $SHELL_FILE_PATH
-echo 'zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always \$realpath'' >> $SHELL_FILE_PATH
 echo 'autoload -Uz compinit && compinit' >> $SHELL_FILE_PATH
 echo '[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh' >> $SHELL_FILE_PATH
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
 
 curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | zsh
+
+echo 'zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always \$realpath'' >> $SHELL_FILE_PATH
 
 # Init
 source $SHELL_FILE_PATH
