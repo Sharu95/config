@@ -19,7 +19,8 @@ plugins=(
 	fzf-tab
 	colorize
 	git
-	autoswitch_virtualenv
+	# autoswitch_virtualenv
+	pyautoenv
 	gh
 	terraform
 )
