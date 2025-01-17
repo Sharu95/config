@@ -29,6 +29,7 @@
     "Green Component" : 0.9372367262840271
   },
   "HotKey Window Floats" : true,
+  "Use Custom Window Title" : false,
   "Right Option Key Sends" : 0,
   "Character Encoding" : 4,
   "Selection Color" : {
@@ -467,7 +468,7 @@
     "Green Component" : 0
   },
   "Blur" : true,
-  "Normal Font" : "FiraCode-Bold 13",
+  "Normal Font" : "FiraCode-Bold 12",
   "Vertical Spacing" : 1,
   "Use Underline Color" : false,
   "Ansi 7 Color" : {
