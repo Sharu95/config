@@ -5,26 +5,6 @@
     "when": "terminal.active"
   },
   {
-    "key": "shift+enter",
-    "command": "notebook.cell.executeAndSelectBelow",
-    "when": "{   \"key\": \"ctrl+enter\",   \"command\": \"notebook.cell.execute\",   \"when\": \"notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0\" }"
-  },
-  {
-    "key": "shift+enter",
-    "command": "-notebook.cell.executeAndSelectBelow",
-    "when": "notebookCellListFocused && notebookCellType == 'markup' || notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
-  },
-  {
-    "key": "shift+enter",
-    "command": "notebook.cell.executeAndSelectBelow",
-    "when": "{   \"key\": \"ctrl+enter\",   \"command\": \"notebook.cell.execute\",   \"when\": \"notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0\" }"
-  },
-  {
-    "key": "shift+enter",
-    "command": "-notebook.cell.executeAndSelectBelow",
-    "when": "notebookCellListFocused && notebookCellType == 'code' || editorTextFocus && inputFocus && notebookEditorFocused"
-  },
-  {
     "key": "ctrl+shift+cmd+left",
     "command": "workbench.action.moveEditorToLeftGroup"
   },
