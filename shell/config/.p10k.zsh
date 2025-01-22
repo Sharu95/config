@@ -32,6 +32,7 @@
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
     #os_icon                 # os identifier
+    time
     vcs                     # git status
     dir                     # current directory
     # =========================[ Line #2 ]=========================
@@ -111,7 +112,6 @@
     # public_ip             # public IP address
     # proxy                 # system-wide http/https/ftp proxy
     battery               # internal battery
-    time                    # current time
     # wifi                  # wifi speed
     # example               # example user-defined segment (see prompt_example function below)
   )
