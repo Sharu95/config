@@ -23,4 +23,5 @@ plugins=(
 	pyautoenv
 	gh
 	terraform
+	you-should-use
 )
