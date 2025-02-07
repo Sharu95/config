@@ -13,7 +13,6 @@ brew install gcalcli
 brew install --cask google-chrome
 brew install --cask postman
 brew install --cask intellij-idea
-brew install --cask betterdisplay
 brew install --cask displaylink
 
 # More optional ones
