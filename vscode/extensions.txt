@@ -3,8 +3,6 @@ austenc.tailwind-docs
 bradlc.vscode-tailwindcss
 dunstontc.viml
 eamodio.gitlens
-equinusocio.vsc-material-theme
-equinusocio.vsc-material-theme-icons
 firefox-devtools.vscode-firefox-debug
 fwcd.kotlin
 github.github-vscode-theme
