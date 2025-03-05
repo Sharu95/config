@@ -21,25 +21,33 @@ urlencode() {
 awsopen() {
 	if [[ "$#" < 1 ]]
 	then
-		echo "Usage: awsopen [envs] - example: 'awsopen dev prod insight'"
-		return
+		if [[ -n "$AWS_PROFILE" ]]; then
+			echo "No profile provided, but found $AWS_PROFILE set, opening console"
+			assume --console "$AWS_PROFILE"
+		else
+			echo "Usage: awsopen [envs] - example: 'awsopen dev prod insight'"
+			return
+		fi
 	fi
 
 	for e in "$@"
 		do
 			if [[ "$e" == */* ]]; then
 				service="${e#*/}"  
-				profile="${e%%/*}"     
+				profile="${e%%/*}"
+				assume --console "$profile" --service "$service"
 			else
-				service="console"  
 				profile="$e"
+				assume --console "$profile"
 			fi
-			assume --console "$profile" --service $service
+			
 		done
 	
 }
 
 awsinit() {
+	# aws sso login --sso-session sharu-sso
+
 	if [[ "$1" == "all" || -z "$1" ]]; then 
 		while read profile;
 			do
