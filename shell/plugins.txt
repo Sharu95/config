@@ -20,7 +20,7 @@ plugins=(
 	colorize
 	git
 	# autoswitch_virtualenv
-	pyautoenv
+	# pyautoenv
 	gh
 	terraform
 	you-should-use
