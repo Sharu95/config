@@ -24,4 +24,6 @@ plugins=(
 	gh
 	terraform
 	you-should-use
+	last-working-dir
+	httpie
 )

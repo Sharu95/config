@@ -14,6 +14,7 @@ brew install chroma
 brew install pygments
 brew install athenacli
 brew install eza
+brew install httpie
 
 # Casks 
 brew install --cask alt-tab
