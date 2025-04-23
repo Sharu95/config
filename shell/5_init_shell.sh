@@ -9,6 +9,9 @@ mkdir -p $HOME/.config/colorls
 cp "./config/colorls_dark_colors.yaml" $HOME/.config/colorls/dark_colors.yaml
 cp "./config/.p10k.zsh" $HOME/.p10k.zsh
 
+mkdir -p $HOME/.config/lsd/
+cp "./config/lsd_config.yaml" $HOME/.config/lsd/config.yamlt
+
 SHELL_FILE_PATH="$HOME/.zshrc"
 SHELL_FILE_PROFILE_PATH="$HOME/.zprofile"
 
@@ -93,7 +96,8 @@ echo '
 ' >> $SHELL_FILE_PATH
 echo '# General' >> $SHELL_FILE_PATH
 echo '#alias ls="ls -FlaGh"' >> $SHELL_FILE_PATH
-echo 'alias ls="colorls -lA --sd --gs"' >> $SHELL_FILE_PATH
+echo '#alias ls="colorls -lA --sd --gs"' >> $SHELL_FILE_PATH
+echo 'alias ls="lsd -FAlg --group-directories-first"' >> $SHELL_FILE_PATH
 echo 'alias p=python3' >> $SHELL_FILE_PATH
 echo 'alias restart="exec zsh"' >> $SHELL_FILE_PATH
 echo 'alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"' >> $SHELL_FILE_PATH
