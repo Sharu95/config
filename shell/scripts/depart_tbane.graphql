@@ -1,0 +1,24 @@
+query {
+  trip(
+    from: { place: "NSR:StopPlace:6332" }
+    to: { place: "NSR:StopPlace:288" }
+    numTripPatterns: 10
+  ) {
+    tripPatterns {
+      legs {
+        fromEstimatedCall {
+          expectedDepartureTime
+          aimedDepartureTime
+        }
+        toEstimatedCall {
+          expectedArrivalTime
+          aimedArrivalTime
+        }
+        line {
+          publicCode
+          name
+        }
+      }
+    }
+  }
+}
