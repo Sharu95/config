@@ -23,7 +23,6 @@
     },
     "editor.suggest.preview": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
     "material-icon-theme.folders.theme": "specific",
     "materialTheme.accent": "Cyan",
     "material-icon-theme.activeIconPack": "react_redux",
@@ -36,7 +35,6 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "workbench.startupEditor": "newUntitledFile",
-    "python.linting.enabled": true,
     "editor.lineNumbers": "on",
     "workbench.colorCustomizations": {
         "[Material Theme]": {
@@ -116,11 +114,6 @@
     ],
     "database-client.autoSync": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "gitlens.autolinks": [
-        {
-            "url": "https://toil.kitemaker.co/wK3AQr-Sensorita/aEJyFU-Sensorita/items/"
-        }
-    ],
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.hovers.avatars": false,
     "gitlens.blame.avatars": false,
@@ -134,5 +127,23 @@
         "overview"
     ],
     "merge-conflict.codeLens.enabled": false,
-    "gitlens.blame.compact": false
+    "gitlens.blame.compact": false,
+    "dvc.doNotShowCliUnavailable": true,
+    "workbench.colorTheme": "GitHub Light",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "hdinsight.disableOpenSurveyLink": true,
+    "makefile.configureOnOpen": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "toml": false
+    },
+    "ruff.nativeServer": "on"
 }
