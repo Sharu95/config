@@ -1,8 +1,8 @@
 # Install homebrew
 echo "| Installing $fg_bold[yellow]Homebrew$reset_color"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$($(brew --prefix)/bin/brew shellenv)"' >> $HOME/.zprofile
-eval $($(brew --prefix)/bin/brew shellenv)
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+eval $(/opt/homebrew/bin/brew shellenv)
 
 # Install tmux plugin manager
 echo "| Installing $fg_bold[yellow]TMUX plugin manager$reset_color"

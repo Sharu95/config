@@ -1,5 +1,6 @@
 # Other installs might be used in aliases
-mkdir $ZSH_CUSTOM/completions
+ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
+mkdir -p $ZSH_CUSTOM/completions
 gh completion -s zsh > $ZSH_CUSTOM/completions/_gh
 cp "./completions/_awsinit" $ZSH_CUSTOM/completions/
 cp "./completions/_awsopen" $ZSH_CUSTOM/completions/
@@ -10,7 +11,7 @@ cp "./config/colorls_dark_colors.yaml" $HOME/.config/colorls/dark_colors.yaml
 cp "./config/.p10k.zsh" $HOME/.p10k.zsh
 
 mkdir -p $HOME/.config/lsd/
-cp "./config/lsd_config.yaml" $HOME/.config/lsd/config.yamlt
+cp "./config/lsd_config.yaml" $HOME/.config/lsd/config.yaml
 
 SHELL_FILE_PATH="$HOME/.zshrc"
 SHELL_FILE_PROFILE_PATH="$HOME/.zprofile"
@@ -139,6 +140,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
 curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | zsh
 
 echo 'zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always \$realpath'' >> $SHELL_FILE_PATH
+echo 'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' >> $SHELL_FILE_PATH
 
 # Init
 source $SHELL_FILE_PATH
