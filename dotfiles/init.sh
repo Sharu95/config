@@ -1,0 +1,1 @@
+cp ./.gitignore ./.gitconfig ./.tmux.conf ./.vimrc $HOME/
