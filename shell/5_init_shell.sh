@@ -107,6 +107,7 @@ echo 'alias trestart="tmux source $HOME/.tmux.conf"' >> $SHELL_FILE_PATH
 echo 'alias less=cless' >> $SHELL_FILE_PATH
 echo 'alias cat=ccat' >> $SHELL_FILE_PATH
 echo 'alias assume=". assume"' >> $SHELL_FILE_PATH
+echo 'alias idea="open -na \"IntelliJ IDEA CE.app\" --args "$@""' >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
 
 
