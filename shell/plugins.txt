@@ -26,4 +26,5 @@ plugins=(
 	you-should-use
 	last-working-dir
 	httpie
+	azure
 )
