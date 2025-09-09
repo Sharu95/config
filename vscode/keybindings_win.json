@@ -121,7 +121,7 @@
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     },
     {
-        "key": "ctrl+shift+7",
+        "key": "ctrl+7",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -203,5 +203,25 @@
     {
         "key": "ctrl+alt+win+n",
         "command": "-welcome.showNewFileEntries"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "rest-client.request",
+        "when": "editorTextFocus && editorLangId == 'http'"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-rest-client.request",
+        "when": "editorTextFocus && editorLangId == 'http'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "rest-client.request",
+        "when": "editorTextFocus && editorLangId == 'plaintext'"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-rest-client.request",
+        "when": "editorTextFocus && editorLangId == 'plaintext'"
     }
 ]
