@@ -1,3 +1,4 @@
+Extensions installed on WSL: Ubuntu:
 amazonwebservices.aws-toolkit-vscode
 austenc.tailwind-docs
 bierner.markdown-mermaid
@@ -17,11 +18,14 @@ github.copilot
 github.copilot-chat
 github.github-vscode-theme
 github.vscode-github-actions
+golang.go
 grapecity.gc-excelviewer
 graphql.vscode-graphql
 graphql.vscode-graphql-syntax
 gruntfuggly.todo-tree
 h5web.vscode-h5web
+hashicorp.terraform
+humao.rest-client
 iterative.dvc
 iterative.vscode-dvc-pack
 k--kato.intellij-idea-keybindings
@@ -30,7 +34,9 @@ lucien-martijn.parquet-visualizer
 mathiasfrohlich.kotlin
 mechatroner.rainbow-csv
 minhthai.vscode-todo-parser
+ms-azuretools.vscode-azurefunctions
 ms-azuretools.vscode-azureresourcegroups
+ms-azuretools.vscode-azureterraform
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
 ms-pyright.pyright
