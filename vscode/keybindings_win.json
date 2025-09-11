@@ -4,7 +4,7 @@
         "command": "gitlens.toggleFileBlame:editor"
     },
     {
-        "key": "shift+alt+left",
+        "key": "ctrl+shift+alt+home",
         "command": "workbench.action.focusLeftGroup"
     },
     {
@@ -12,7 +12,7 @@
         "command": "-workbench.action.focusLeftGroup"
     },
     {
-        "key": "shift+alt+right",
+        "key": "ctrl+shift+alt+end",
         "command": "workbench.action.focusRightGroup"
     },
     {
@@ -20,7 +20,7 @@
         "command": "-workbench.action.focusRightGroup"
     },
     {
-        "key": "shift+alt+up",
+        "key": "ctrl+shift+alt+pageup",
         "command": "workbench.action.focusAboveGroup"
     },
     {
@@ -28,7 +28,7 @@
         "command": "-workbench.action.focusAboveGroup"
     },
     {
-        "key": "shift+alt+down",
+        "key": "ctrl+shift+alt+pagedown",
         "command": "workbench.action.focusBelowGroup"
     },
     {
@@ -193,11 +193,11 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+n",
+        "key": "ctrl+shift+n",
         "command": "explorer.newFolder"
     },
     {
-        "key": "ctrl+shift+n",
+        "key": "ctrl+n",
         "command": "welcome.showNewFileEntries"
     },
     {
@@ -223,5 +223,115 @@
         "key": "ctrl+alt+r",
         "command": "-rest-client.request",
         "when": "editorTextFocus && editorLangId == 'plaintext'"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "-editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "cursorHomeSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+home",
+        "command": "-cursorHomeSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "home",
+        "command": "-cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "end",
+        "command": "-cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-editor.action.goToDeclaration",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "browserback",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "browserforward",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+alt+v",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+f6",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
     }
 ]
