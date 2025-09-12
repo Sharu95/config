@@ -121,7 +121,7 @@
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     },
     {
-        "key": "ctrl+7",
+        "key": "shift+alt+7",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -365,7 +365,7 @@
         "when": "viewContainer.workbench.view.extensions.enabled"
     },
     {
-        "key": "shift+alt+n",
+        "key": "ctrl+shift+alt+n",
         "command": "workbench.action.terminal.new",
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     },
@@ -537,5 +537,30 @@
         "key": "ctrl+enter",
         "command": "-inlineChat.acceptChanges",
         "when": "inlineChatHasProvider && inlineChatVisible"
+    },
+    {
+        "key": "alt+f",
+        "command": "actions.find",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-actions.find",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "alt+1",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled && !explorerViewletFocus"
+    },
+    {
+        "key": "alt+numpad1",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled && !explorerViewletFocus"
+    },
+    {
+        "key": "alt+1",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled && !explorerViewletFocus"
     }
 ]

@@ -1,59 +1,72 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "globalSummon",
                 "name": "_quake",
                 "toggleVisibility": true
             },
-            "id": "User.globalSummon.A1BA4FE8"
+            "id": "User.globalSummon.A1BA4FE8",
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{d11569f6-13c1-5ad1-829c-436057ccdf45}",
-    "keybindings": 
-    [
+    // "compatibility.allowHeadless": true,
+    "keybindings": [
         {
-            "id": "User.globalSummon.A1BA4FE8",
+            "id": "Terminal.QuakeMode",
             "keys": "alt+shift+1"
         },
         {
             "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+c"
+            "keys": "alt+c"
         },
         {
             "id": "Terminal.PasteFromClipboard",
-            "keys": "ctrl+v"
+            "keys": "alt+v"
+        },
+        {
+            "id": "Terminal.MoveWordLeft",
+            "keys": "alt+left"
+        },
+        {
+            "id": "Terminal.MoveWordRight",
+            "keys": "alt+right"
+        },
+        {
+            "id": "Terminal.DeleteLine",
+            "keys": "alt+backspace"
+        },
+        {
+            "id": "Terminal.DeleteWord",
+            "keys": "ctrl+backspace"
+        },
+        {
+            "id": "User.globalSummon.A1BA4FE8",
+            "keys": "alt+shift+1"
         },
         {
             "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
         }
     ],
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "colorScheme": "Catppuccin Macchiato",
-            "font": 
-            {
+            "font": {
                 "face": "FiraCode Nerd Font"
             },
             "opacity": 80
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -88,8 +101,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#24273A",
             "black": "#494D64",
@@ -115,24 +127,20 @@
         }
     ],
     "theme": "Catppuccin Macchiato",
-    "themes": 
-    [
+    "themes": [
         {
             "name": "Catppuccin Macchiato",
-            "tab": 
-            {
+            "tab": {
                 "background": "#24273AFF",
                 "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
-            "tabRow": 
-            {
+            "tabRow": {
                 "background": "#1E2030FF",
                 "unfocusedBackground": "#181926FF"
             },
-            "window": 
-            {
+            "window": {
                 "applicationTheme": "dark",
                 "experimental.rainbowFrame": false,
                 "frame": null,
