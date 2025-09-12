@@ -393,5 +393,23 @@
         "key": "ctrl+pagedown",
         "command": "-workbench.action.terminal.focusNext",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "workbench.action.findInFiles",
+        "when": "!explorerResourceIsFolder || !filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.action.findInFiles",
+        "when": "!explorerResourceIsFolder || !filesExplorerFocus"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "-workbench.action.replaceInFiles"
     }
 ]
