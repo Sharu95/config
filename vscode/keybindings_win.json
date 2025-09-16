@@ -111,7 +111,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+l",
+        "key": "ctrl+alt+l",
         "command": "editor.action.formatDocument",
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     },
@@ -285,7 +285,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+b",
+        "key": "alt+b",
         "command": "editor.action.goToDeclaration",
         "when": "editorTextFocus"
     },
@@ -582,5 +582,34 @@
         "key": "ctrl+v",
         "command": "-filesExplorer.paste",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.refactor",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "-editor.action.refactor",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+oem_period",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "ruff.executeFormat"
     }
 ]
