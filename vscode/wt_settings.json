@@ -1,23 +1,27 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
         {
+            "id": "User.CustomSummonQuake",
             "command": {
                 "action": "globalSummon",
                 "name": "_quake",
-                "toggleVisibility": true
-            },
-            "id": "User.globalSummon.A1BA4FE8",
+                "toggleVisibility": true,
+                "monitor": "toMouse",
+                "desktop": "toCurrent"
+            }
         }
     ],
+    "compatibility.allowHeadless": false,
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{d11569f6-13c1-5ad1-829c-436057ccdf45}",
-    // "compatibility.allowHeadless": true,
-    "keybindings": [
+    "keybindings": 
+    [
         {
-            "id": "Terminal.QuakeMode",
+            "id": "User.CustomSummonQuake",
             "keys": "alt+shift+1"
         },
         {
@@ -45,28 +49,30 @@
             "keys": "ctrl+backspace"
         },
         {
-            "id": "User.globalSummon.A1BA4FE8",
-            "keys": "alt+shift+1"
-        },
-        {
             "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
         }
     ],
-    "newTabMenu": [
+    "minimizeToNotificationArea": false,
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "colorScheme": "Catppuccin Macchiato",
-            "font": {
+            "font": 
+            {
                 "face": "FiraCode Nerd Font"
             },
             "opacity": 80
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -101,7 +107,8 @@
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#24273A",
             "black": "#494D64",
@@ -127,20 +134,24 @@
         }
     ],
     "theme": "Catppuccin Macchiato",
-    "themes": [
+    "themes": 
+    [
         {
             "name": "Catppuccin Macchiato",
-            "tab": {
+            "tab": 
+            {
                 "background": "#24273AFF",
                 "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
-            "tabRow": {
+            "tabRow": 
+            {
                 "background": "#1E2030FF",
                 "unfocusedBackground": "#181926FF"
             },
-            "window": {
+            "window": 
+            {
                 "applicationTheme": "dark",
                 "experimental.rainbowFrame": false,
                 "frame": null,
