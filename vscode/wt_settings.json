@@ -4,16 +4,17 @@
     "actions": 
     [
         {
-            "id": "User.CustomSummonQuake",
-            "command": {
+            "command": 
+            {
                 "action": "globalSummon",
-                "name": "_quake",
-                "toggleVisibility": true,
+                "desktop": "toCurrent",
                 "monitor": "toMouse",
-                "desktop": "toCurrent"
-            }
+                "toggleVisibility": true
+            },
+            "id": "User.CustomSummonQuake"
         }
     ],
+    "launchMode": "maximized",
     "compatibility.allowHeadless": false,
     "copyFormatting": "none",
     "copyOnSelect": true,
@@ -133,6 +134,7 @@
             "yellow": "#EED49F"
         }
     ],
+    "showTabsInTitlebar": true,
     "theme": "Catppuccin Macchiato",
     "themes": 
     [
