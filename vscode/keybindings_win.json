@@ -111,11 +111,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+alt+l",
-        "command": "editor.action.formatDocument",
-        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
-    },
-    {
         "key": "shift+alt+f",
         "command": "-editor.action.formatDocument",
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
@@ -149,7 +144,7 @@
         "command": "-workbench.action.nextEditor"
     },
     {
-        "key": "ctrl+l",
+        "key": "alt+l",
         "command": "workbench.action.gotoLine"
     },
     {
@@ -305,7 +300,7 @@
         "when": "canNavigateForward"
     },
     {
-        "key": "ctrl+alt+left",
+        "key": "shift+alt+b",
         "command": "workbench.action.navigateBack",
         "when": "canNavigateBack"
     },
@@ -610,6 +605,41 @@
     },
     {
         "key": "ctrl+alt+l",
-        "command": "ruff.executeFormat"
+        "command": "-editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "prettier.forceFormatDocument"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+alt+tab",
+        "command": "-workbench.action.focusPreviousGroup",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.focusNextGroup",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+tab",
+        "command": "-workbench.action.focusNextGroup",
+        "when": "editorFocus"
     }
 ]
