@@ -1,8 +1,7 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
             "command": 
             {
@@ -14,8 +13,6 @@
             "id": "User.CustomSummonQuake"
         }
     ],
-    "launchMode": "maximized",
-    "compatibility.allowHeadless": false,
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{d11569f6-13c1-5ad1-829c-436057ccdf45}",
@@ -54,6 +51,7 @@
             "keys": "alt+shift+d"
         }
     ],
+    "launchMode": "default",
     "minimizeToNotificationArea": false,
     "newTabMenu": 
     [
@@ -98,7 +96,8 @@
                 "hidden": false,
                 "name": "Ubuntu",
                 "padding": "12",
-                "source": "Microsoft.WSL"
+                "source": "Microsoft.WSL",
+                "useAcrylic": false
             },
             {
                 "guid": "{ea6e388f-5504-5e27-b985-e2650a63489e}",
