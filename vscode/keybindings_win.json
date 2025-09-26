@@ -79,10 +79,6 @@
         "command": "workbench.action.moveEditorToRightGroup"
     },
     {
-        "key": "ctrl+shift+alt+left",
-        "command": "workbench.action.moveEditorToPreviousGroup"
-    },
-    {
         "key": "ctrl+shift+alt+up",
         "command": "workbench.action.moveEditorToAboveGroup"
     },
@@ -623,23 +619,7 @@
         "command": "prettier.forceFormatDocument"
     },
     {
-        "key": "ctrl+alt+left",
-        "command": "workbench.action.focusPreviousGroup",
-        "when": "editorFocus"
-    },
-    {
-        "key": "shift+alt+tab",
-        "command": "-workbench.action.focusPreviousGroup",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+alt+right",
-        "command": "workbench.action.focusNextGroup",
-        "when": "editorFocus"
-    },
-    {
-        "key": "alt+tab",
-        "command": "-workbench.action.focusNextGroup",
-        "when": "editorFocus"
+        "key": "ctrl+shift+alt+left",
+        "command": "workbench.action.moveEditorToLeftGroup"
     }
 ]
