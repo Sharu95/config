@@ -10,6 +10,10 @@ winget install HTTPie.HTTPie
 winget install SlackTechnologies.Slack
 code --install-extension ms-vscode-remote.remote-wsl # Install WSL extension in VS code to do WSL things like settings etc (in Win env)
 
+# Download firacode
+https://github.com/ryanoasis/nerd-fonts/releases/
+
+
 # In WSL:
 sudo apt update 
 sudo apt install zsh
@@ -18,6 +22,9 @@ sudo apt install httpie
 sudo apt install build-essential
 sudo apt install lzma unzip
 sudo apt install jq
+sudo snap install onefetch
 
-# Download firacode
-https://github.com/ryanoasis/nerd-fonts/releases/
+# Set default editor in WSL
+sudo update-alternatives --config editor
+
+# Download ASDF
