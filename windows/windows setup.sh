@@ -27,13 +27,18 @@ sudo apt install fzf
 sudo apt install gh
 sudo apt install ruby-dev
 sudo apt install eza
+sudo apt install golang-go # Initially for ASDF
 
 # Set default editor in WSL
 sudo update-alternatives --config editor
 
 # Run shell/1_init_install.sh
+# Run shell/5_init_shell.sh
 
 # Download ASDF
+# 1. Clone repo, run make, add ASDF executable to path
+
+# Run shell/3_init_asdf.sh
 
 
 

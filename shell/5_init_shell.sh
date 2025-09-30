@@ -89,6 +89,7 @@ echo 'setopt PROMPT_SUBST' >> $SHELL_FILE_PATH
 # %B%{$fg_bold[green]%}λ %{$fg_bold[cyan]%}%c%{$reset_color%}%b\$(git-radar --zsh --fetch) ➜ "' >> $SHELL_FILE_PATH
 echo 'export PATH="/Applications/Firefox.app/Contents/MacOS/firefox:$PATH"' >> $SHELL_FILE_PATH
 echo 'export PATH="$PATH:$HOME/.local/bin"' >> $SHELL_FILE_PATH
+echo 'export PATH="$HOME/asdf:$PATH"' >> $SHELL_FILE_PATH
 echo 'export PATH="$HOME/.asdf/shims:$PATH"' >> $SHELL_FILE_PATH
 
 echo >> $SHELL_FILE_PATH
