@@ -146,6 +146,7 @@ echo 'fpath+=$HOME/.zfunc' >> $SHELL_FILE_PATH
 echo 'fpath+=$ZSH_CUSTOM/completions' >> $SHELL_FILE_PATH
 echo 'enable-fzf-tab' >> $SHELL_FILE_PATH
 echo 'autoload -Uz compinit && compinit' >> $SHELL_FILE_PATH
+echo 'autoload -U +X bashcompinit && bashcompinit' >> $SHELL_FILE_PATH
 
 if [ "$1" = "mac" ]; then
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
