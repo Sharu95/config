@@ -621,5 +621,9 @@
     {
         "key": "ctrl+shift+alt+left",
         "command": "workbench.action.moveEditorToLeftGroup"
+    },
+    {
+        "key": "alt+1",
+        "command": "workbench.action.toggleSidebarVisibility"
     }
 ]
