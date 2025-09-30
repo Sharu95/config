@@ -3,7 +3,11 @@ wsl --install
 
 # Windows applications
 winget install Microsoft.VisualStudioCode
-winget install httpie
+winget install Docker.DockerDesktop
+winget install Bruno.Bruno
+winget install Postman.Postman
+winget install HTTPie.HTTPie
+winget install SlackTechnologies.Slack
 code --install-extension ms-vscode-remote.remote-wsl # Install WSL extension in VS code to do WSL things like settings etc (in Win env)
 
 # In WSL:
