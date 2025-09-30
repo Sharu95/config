@@ -27,6 +27,8 @@ sudo apt install fzf
 sudo apt install gh
 sudo apt install ruby-dev
 sudo apt install eza
+sudo apt install bzip2 libssl-dev # ASDF install deps on some things like python
+sudo apt-get install libncurses5-dev libncursesw5-dev # ASDF install deps on some things like python
 sudo apt install golang-go # Initially for ASDF
 
 # Set default editor in WSL
