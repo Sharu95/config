@@ -23,8 +23,17 @@ sudo apt install build-essential
 sudo apt install lzma unzip
 sudo apt install jq
 sudo snap install onefetch
+sudo apt install fzf
+sudo apt install gh
+sudo apt install ruby-dev
+sudo apt install eza
 
 # Set default editor in WSL
 sudo update-alternatives --config editor
 
+# Run shell/1_init_install.sh
+
 # Download ASDF
+
+
+

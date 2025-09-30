@@ -1,3 +1,8 @@
+if [ "$1" != "mac" ] && [ "$1" != "win" ]; then
+    echo "Usage: $0 [mac|win]"
+    exit 1
+fi
+
 # Other installs might be used in aliases
 ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 mkdir -p $ZSH_CUSTOM/completions
@@ -14,7 +19,9 @@ mkdir -p $HOME/.config/lsd/
 cp "./config/lsd_config.yaml" $HOME/.config/lsd/config.yaml
 
 SHELL_FILE_PATH="$HOME/.zshrc"
-SHELL_FILE_PROFILE_PATH="$HOME/.zprofile"
+if [ "$1" = "mac" ]; then
+    SHELL_FILE_PROFILE_PATH="$HOME/.zprofile"
+fi
 
 # Add plugins
 cat plugins.txt >> $SHELL_FILE_PATH
@@ -22,8 +29,11 @@ echo >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
 echo "export FZF_DEFAULT_OPTS=\"--preview 'bat --color=always {}'\"" >> $SHELL_FILE_PATH
 echo 'ZSH_THEME="powerlevel10k/powerlevel10k"' >> $SHELL_FILE_PATH
-echo 'source $ZSH/oh-my-zsh.sh' >> $SHELL_FILE_PATH
+echo 'source $HOME/.oh-my-zsh/oh-my-zsh.sh' >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
+
+echo 'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' >> $SHELL_FILE_PATH
+echo 'source $HOME/.p10k.zsh' >> $SHELL_FILE_PATH
 
 echo '
 
@@ -73,10 +83,10 @@ echo 'ZSH_THEME_AWS_REGION_SUFFIX="%{$reset_color%}"' >> $SHELL_FILE_PATH
 echo >> $SHELL_FILE_PATH
 
 echo 'setopt PROMPT_SUBST' >> $SHELL_FILE_PATH
-echo 'export RPROMPT="%B%{$fg_bold[cyan]%}%D{%a %d %b} %T %{$reset_color%} | \$(battery_pct_prompt)%b | \$(aws_prompt_info)"' >> $SHELL_FILE_PATH
-echo 'export PROMPT="
+# echo 'export RPROMPT="%B%{$fg_bold[cyan]%}%D{%a %d %b} %T %{$reset_color%} | \$(battery_pct_prompt)%b | \$(aws_prompt_info)"' >> $SHELL_FILE_PATH
+# echo 'export PROMPT="
 
-%B%{$fg_bold[green]%}λ %{$fg_bold[cyan]%}%c%{$reset_color%}%b\$(git-radar --zsh --fetch) ➜ "' >> $SHELL_FILE_PATH
+# %B%{$fg_bold[green]%}λ %{$fg_bold[cyan]%}%c%{$reset_color%}%b\$(git-radar --zsh --fetch) ➜ "' >> $SHELL_FILE_PATH
 echo 'export PATH="/Applications/Firefox.app/Contents/MacOS/firefox:$PATH"' >> $SHELL_FILE_PATH
 echo 'export PATH="$PATH:$HOME/.local/bin"' >> $SHELL_FILE_PATH
 echo 'export PATH="$HOME/.asdf/shims:$PATH"' >> $SHELL_FILE_PATH
@@ -135,15 +145,14 @@ echo 'fpath+=$HOME/.zfunc' >> $SHELL_FILE_PATH
 echo 'fpath+=$ZSH_CUSTOM/completions' >> $SHELL_FILE_PATH
 echo 'enable-fzf-tab' >> $SHELL_FILE_PATH
 echo 'autoload -Uz compinit && compinit' >> $SHELL_FILE_PATH
-echo '[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh' >> $SHELL_FILE_PATH
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
+
+if [ "$1" = "mac" ]; then
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $SHELL_FILE_PROFILE_PATH
+fi
 
 curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | zsh
 
 echo 'zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always \$realpath'' >> $SHELL_FILE_PATH
-echo 'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' >> $SHELL_FILE_PATH
 
 # Init
 source $SHELL_FILE_PATH
-exec zsh
-
