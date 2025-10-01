@@ -293,7 +293,7 @@
         "when": "canNavigateForward"
     },
     {
-        "key": "shift+alt+b",
+        "key": "ctrl+alt+left",
         "command": "workbench.action.navigateBack",
         "when": "canNavigateBack"
     },
@@ -625,5 +625,9 @@
         "key": "ctrl+shift+e",
         "command": "-workbench.view.explorer",
         "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.duplicateSelection"
     }
 ]
