@@ -334,14 +334,6 @@
         "command": "explorer.newFile"
     },
     {
-        "key": "shift+alt+o",
-        "command": "workbench.action.openRecent"
-    },
-    {
-        "key": "ctrl+r",
-        "command": "-workbench.action.openRecent"
-    },
-    {
         "key": "shift+alt+x",
         "command": "workbench.view.extensions",
         "when": "viewContainer.workbench.view.extensions.enabled"
@@ -639,5 +631,13 @@
         "key": "ctrl+k ctrl+r",
         "command": "-git.revertSelectedRanges",
         "when": "editorTextFocus && !operationInProgress && resourceScheme == 'vscode-remote'"
+    },
+    {
+        "key": "shift+alt+o",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
     }
 ]
