@@ -629,5 +629,15 @@
     {
         "key": "ctrl+d",
         "command": "editor.action.duplicateSelection"
+    },
+    {
+        "key": "ctrl+alt+z",
+        "command": "git.revertSelectedRanges",
+        "when": "editorTextFocus && !operationInProgress && resourceScheme == 'vscode-remote'"
+    },
+    {
+        "key": "ctrl+k ctrl+r",
+        "command": "-git.revertSelectedRanges",
+        "when": "editorTextFocus && !operationInProgress && resourceScheme == 'vscode-remote'"
     }
 ]
