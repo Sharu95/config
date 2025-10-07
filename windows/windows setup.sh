@@ -17,6 +17,7 @@ https://github.com/ryanoasis/nerd-fonts/releases/
 
 
 # In WSL:
+sudo apt install xclip
 sudo apt update 
 sudo apt install zsh
 sudo apt install lsd

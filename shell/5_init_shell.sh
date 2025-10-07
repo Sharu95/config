@@ -119,6 +119,10 @@ echo 'alias less=cless' >> $SHELL_FILE_PATH
 echo 'alias cat=ccat' >> $SHELL_FILE_PATH
 echo 'alias assume=". assume"' >> $SHELL_FILE_PATH
 echo 'alias idea="open -na \"IntelliJ IDEA CE.app\" --args "$@""' >> $SHELL_FILE_PATH
+if [ "$1" = "win" ]; then
+    echo "alias pbcopy='xclip -selection clipboard'" >> $SHELL_FILE_PATH
+    echo "alias pbpaste='xclip -selection clipboard -o'" >> $SHELL_FILE_PATH
+fi
 echo >> $SHELL_FILE_PATH
 
 
