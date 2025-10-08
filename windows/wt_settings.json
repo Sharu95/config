@@ -26,6 +26,10 @@
             "keys": "alt+c"
         },
         {
+            "id": "Terminal.FindText",
+            "keys": "alt+f"
+        },
+        {
             "id": "Terminal.PasteFromClipboard",
             "keys": "alt+v"
         },
