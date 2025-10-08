@@ -1,12 +1,19 @@
-# Install homebrew
-echo "| Installing $fg_bold[yellow]Homebrew$reset_color"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-eval $(/opt/homebrew/bin/brew shellenv)
+if [ "$1" != "mac" ] && [ "$1" != "win" ]; then
+    echo "Usage: $0 [mac|win]"
+    exit 1
+fi
 
-# Install tmux plugin manager
-echo "| Installing $fg_bold[yellow]TMUX plugin manager$reset_color"
-git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+if [ "$1" = "mac" ]; then
+    # Install homebrew
+    echo "| Installing $fg_bold[yellow]Homebrew$reset_color"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+    eval $(/opt/homebrew/bin/brew shellenv)
+
+    # Install tmux plugin manager
+    echo "| Installing $fg_bold[yellow]TMUX plugin manager$reset_color"
+    git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+fi
 
 # Install Oh my Zsh
 echo "| Installing $fg_bold[yellow]Oh My Zsh$reset_color"
