@@ -35,6 +35,7 @@ sudo update-alternatives --config editor
 
 # Download ASDF
 # 1. Clone repo, run make, add ASDF executable to path
+git clone https://github.com/asdf-vm/asdf.git $HOME/asdf
 
 # Run shell/3_init_asdf.sh and
 # asdf completion zsh > $ZSH_CUSTOM/completions/_asdf
