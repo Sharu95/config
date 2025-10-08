@@ -23,7 +23,7 @@ sudo apt install fzf
 sudo apt install gh
 sudo apt install ruby-dev
 sudo apt install eza
-sudo apt install bzip2 libssl-dev libncurses5-dev libncursesw5-dev lzma libffi-dev sqlite3 libsqlite3-dev # ASDF install deps on some things like python
+sudo apt install bzip2 libssl-dev libncurses5-dev libncursesw5-dev lzma libffi-dev sqlite3 libsqlite3-dev zlib1g-dev libbz2-dev libreadline-dev liblzma-dev libncurses-dev tk-dev # ASDF install deps on some things like python 
 sudo apt install golang-go # Initially for ASDF
 sudo snap install onefetch
 
